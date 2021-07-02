@@ -1,2 +1,2 @@
 # DroidConfigurator
-Droid configurator for the edition of recommender systems using the Droid DSL.
+Droid configurator for recommender systems using the Droid DSL.
