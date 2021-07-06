@@ -1,0 +1,580 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<html>
+ <head></head>
+ <body>
+  <uml:profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_tZh2YDtuEemVvrziPwI6Kw" name="bibTeX" uri="bibtex" metaclassreference="_tZrAWTtuEemVvrziPwI6Kw _tae4oTtuEemVvrziPwI6Kw _tbdwETtuEemVvrziPwI6Kw"> 
+   <eannotations xmi:id="_tZh2YjtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML"> 
+    <contents xmi:type="ecore:EPackage" xmi:id="_tZh2YTtuEemVvrziPwI6Kw" name="bibTeX" nsuri="http:///schemas/bibTeX/something/1" nsprefix="bibTeX"> 
+     <eannotations xmi:id="_tZh2YztuEemVvrziPwI6Kw" source="PapyrusVersion"> 
+      <details xmi:id="_tZh2ZDtuEemVvrziPwI6Kw" key="Version" value="0.0.1"></details> 
+      <details xmi:id="_tZidcDtuEemVvrziPwI6Kw" key="Comment" value=""></details> 
+      <details xmi:id="_tZidcTtuEemVvrziPwI6Kw" key="Copyright" value=""></details> 
+      <details xmi:id="_tZidcjtuEemVvrziPwI6Kw" key="Date" value="2017-02-01"></details> 
+      <details xmi:id="_tZidcztuEemVvrziPwI6Kw" key="Author" value=""></details> 
+     </eannotations> 
+     <eannotations xmi:id="_tZ5CwDtuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore"> 
+      <details xmi:id="_tZ5CwTtuEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"></details> 
+     </eannotations> 
+     <eannotations xmi:id="_taJhcDtuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore"> 
+      <details xmi:id="_taJhcTtuEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"></details> 
+     </eannotations> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZidiztuEemVvrziPwI6Kw" name="BibTeXFile"> 
+      <eannotations xmi:id="_tZidjDtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZiddDtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_taPBADtuEemVvrziPwI6Kw" name="entries" upperBound="-1" eType="_tZjrkjtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tamNYDtuEemVvrziPwI6Kw" name="base_Class" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZjEgDtuEemVvrziPwI6Kw" name="Author"> 
+      <eannotations xmi:id="_tZjEgTtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZiddTtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EAttribute" xmi:id="_tZjrkDtuEemVvrziPwI6Kw" name="author"> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString" /> 
+      </estructuralfeatures> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tav-YDtuEemVvrziPwI6Kw" name="base_Class" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZjrkjtuEemVvrziPwI6Kw" name="BibTeXEntry"> 
+      <eannotations xmi:id="_tZjrkztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZiddjtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EAttribute" xmi:id="_tZkSoDtuEemVvrziPwI6Kw" name="theId"> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString" /> 
+      </estructuralfeatures> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_ta6WcDtuEemVvrziPwI6Kw" name="base_Class" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZkSojtuEemVvrziPwI6Kw" name="AuthoredEntry" esupertypes="_tZjrkjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZkSoztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZiddztuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_taQPJTtuEemVvrziPwI6Kw" name="authors" lowerBound="1" upperBound="-1" eType="_tZjEgDtuEemVvrziPwI6Kw" /> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZk5sDtuEemVvrziPwI6Kw" name="DatedEntry" esupertypes="_tZjrkjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZk5sTtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZideDtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EAttribute" xmi:id="_tZlgwDtuEemVvrziPwI6Kw" name="year"> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZlgwjtuEemVvrziPwI6Kw" name="TitledEntry" esupertypes="_tZjrkjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZlgwztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZideTtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EAttribute" xmi:id="_tZmH0DtuEemVvrziPwI6Kw" name="title"> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZmH0jtuEemVvrziPwI6Kw" name="BookTitledEntry" esupertypes="_tZjrkjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZmH0ztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidejtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EAttribute" xmi:id="_tZmu4DtuEemVvrziPwI6Kw" name="booktitle"> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZmu4jtuEemVvrziPwI6Kw" name="Article" esupertypes="_tZkSojtuEemVvrziPwI6Kw _tZk5sDtuEemVvrziPwI6Kw _tZlgwjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZmu4ztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZideztuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EAttribute" xmi:id="_tZnV8DtuEemVvrziPwI6Kw" name="journal"> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString" /> 
+      </estructuralfeatures> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tblE0DtuEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZnV8jtuEemVvrziPwI6Kw" name="TechReport" esupertypes="_tZkSojtuEemVvrziPwI6Kw _tZk5sDtuEemVvrziPwI6Kw _tZlgwjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZnV8ztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidfDtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tbtnsDtuEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZnV9DtuEemVvrziPwI6Kw" name="Unpublished" esupertypes="_tZkSojtuEemVvrziPwI6Kw _tZlgwjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZnV9TtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidfTtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EAttribute" xmi:id="_tZn9ADtuEemVvrziPwI6Kw" name="note"> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString" /> 
+      </estructuralfeatures> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tb3YsDtuEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZn9AjtuEemVvrziPwI6Kw" name="Manual" esupertypes="_tZlgwjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZn9AztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidfjtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tcAioDtuEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZokEDtuEemVvrziPwI6Kw" name="Proceedings" esupertypes="_tZk5sDtuEemVvrziPwI6Kw _tZlgwjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZokETtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidfztuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tcKToDtuEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZokEjtuEemVvrziPwI6Kw" name="InProceedings" esupertypes="_tZokEDtuEemVvrziPwI6Kw _tZkSojtuEemVvrziPwI6Kw _tZmH0jtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZokEztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidgDtuEemVvrziPwI6Kw" /> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZokFDtuEemVvrziPwI6Kw" name="Booklet" esupertypes="_tZk5sDtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZokFTtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidgTtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tcbZYDtuEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZokFjtuEemVvrziPwI6Kw" name="Book" esupertypes="_tZkSojtuEemVvrziPwI6Kw _tZk5sDtuEemVvrziPwI6Kw _tZlgwjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZokFztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidgjtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EAttribute" xmi:id="_tZpLIDtuEemVvrziPwI6Kw" name="publisher"> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString" /> 
+      </estructuralfeatures> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tcmYgDtuEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZpLIjtuEemVvrziPwI6Kw" name="InCollection" esupertypes="_tZokFjtuEemVvrziPwI6Kw _tZmH0jtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZpLIztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidgztuEemVvrziPwI6Kw" /> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZpyMDtuEemVvrziPwI6Kw" name="InBook" esupertypes="_tZokFjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZpyMTtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidhDtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EAttribute" xmi:id="_tZpyMztuEemVvrziPwI6Kw" name="chapter"> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZpyNTtuEemVvrziPwI6Kw" name="Misc" esupertypes="_tZjrkjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZqZQDtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidhTtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tdABIDtuEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZqZQTtuEemVvrziPwI6Kw" name="ThesisEntry" esupertypes="_tZkSojtuEemVvrziPwI6Kw _tZk5sDtuEemVvrziPwI6Kw _tZlgwjtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZqZQjtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidhjtuEemVvrziPwI6Kw" /> 
+      <estructuralfeatures xmi:type="ecore:EAttribute" xmi:id="_tZrAUDtuEemVvrziPwI6Kw" name="school"> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString" /> 
+      </estructuralfeatures> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tdJyIDtuEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZrAUjtuEemVvrziPwI6Kw" name="PhDThesis" esupertypes="_tZqZQTtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZrAUztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidhztuEemVvrziPwI6Kw" /> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZrAVDtuEemVvrziPwI6Kw" name="MasterThesis" esupertypes="_tZqZQTtuEemVvrziPwI6Kw"> 
+      <eannotations xmi:id="_tZrAVTtuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidiDtuEemVvrziPwI6Kw" /> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZrAVjtuEemVvrziPwI6Kw" name="entries"> 
+      <eannotations xmi:id="_tZrAVztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidiTtuEemVvrziPwI6Kw" /> 
+      <eoperations xmi:id="_tZ6Q4DtuEemVvrziPwI6Kw" name="CheckEndTypes"> 
+       <eannotations xmi:id="_tZ7fATtuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL"> 
+        <details xmi:id="_tZ7fAjtuEemVvrziPwI6Kw" key="body" value="let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_BibTeXFile->notEmpty()) and target->exists(c|c.extension_BibTeXEntry -> notEmpty())"></details> 
+       </eannotations> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean" /> 
+       <eparameters xmi:id="_tZ6Q4jtuEemVvrziPwI6Kw" name="diagnostics"> 
+        <eannotations xmi:id="_tZ6Q4ztuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel"> 
+         <details xmi:id="_tZ6Q5DtuEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."></details> 
+        </eannotations> 
+        <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain" /> 
+       </eparameters> 
+       <eparameters xmi:id="_tZ638TtuEemVvrziPwI6Kw" name="context"> 
+        <eannotations xmi:id="_tZ638jtuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel"> 
+         <details xmi:id="_tZ638ztuEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."></details> 
+        </eannotations> 
+        <egenerictype xmi:id="_tZ639DtuEemVvrziPwI6Kw"> 
+         <etypearguments xmi:id="_tZ639TtuEemVvrziPwI6Kw"> 
+          <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" /> 
+         </etypearguments> 
+         <etypearguments xmi:id="_tZ7fADtuEemVvrziPwI6Kw"> 
+          <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" /> 
+         </etypearguments> 
+         <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap" /> 
+        </egenerictype> 
+       </eparameters> 
+      </eoperations> 
+      <eoperations xmi:id="_tZ8GETtuEemVvrziPwI6Kw" name="CheckNavigability"> 
+       <eannotations xmi:id="_tZ97QDtuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL"> 
+        <details xmi:id="_tZ97QTtuEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let BibTeXEntryEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_BibTeXFile->notEmpty()), BibTeXFileEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_BibTeXEntry->notEmpty())in if BibTeXFileEnd->notEmpty() and BibTeXEntryEnd->notEmpty() then BibTeXFileEnd->first().isNavigable() = true and BibTeXEntryEnd->first().isNavigable() = false else false endif"></details> 
+       </eannotations> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean" /> 
+       <eparameters xmi:id="_tZ8tITtuEemVvrziPwI6Kw" name="diagnostics"> 
+        <eannotations xmi:id="_tZ8tIjtuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel"> 
+         <details xmi:id="_tZ8tIztuEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."></details> 
+        </eannotations> 
+        <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain" /> 
+       </eparameters> 
+       <eparameters xmi:id="_tZ8tJjtuEemVvrziPwI6Kw" name="context"> 
+        <eannotations xmi:id="_tZ8tJztuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel"> 
+         <details xmi:id="_tZ8tKDtuEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."></details> 
+        </eannotations> 
+        <egenerictype xmi:id="_tZ8tKTtuEemVvrziPwI6Kw"> 
+         <etypearguments xmi:id="_tZ9UMDtuEemVvrziPwI6Kw"> 
+          <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" /> 
+         </etypearguments> 
+         <etypearguments xmi:id="_tZ9UMTtuEemVvrziPwI6Kw"> 
+          <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" /> 
+         </etypearguments> 
+         <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap" /> 
+        </egenerictype> 
+       </eparameters> 
+      </eoperations> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_tZy8IDtuEemVvrziPwI6Kw" name="base_Association" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+     <eclassifiers xmi:type="ecore:EClass" xmi:id="_tZ97QjtuEemVvrziPwI6Kw" name="authors"> 
+      <eannotations xmi:id="_tZ97QztuEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_tZidijtuEemVvrziPwI6Kw" /> 
+      <eoperations xmi:id="_taKIgDtuEemVvrziPwI6Kw" name="CheckEndTypes"> 
+       <eannotations xmi:id="_taLWojtuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL"> 
+        <details xmi:id="_taLWoztuEemVvrziPwI6Kw" key="body" value="let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_AuthoredEntry->notEmpty()) and target->exists(c|c.extension_Author -> notEmpty())"></details> 
+       </eannotations> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean" /> 
+       <eparameters xmi:id="_taKIgjtuEemVvrziPwI6Kw" name="diagnostics"> 
+        <eannotations xmi:id="_taKIgztuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel"> 
+         <details xmi:id="_taKIhDtuEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."></details> 
+        </eannotations> 
+        <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain" /> 
+       </eparameters> 
+       <eparameters xmi:id="_taKvkjtuEemVvrziPwI6Kw" name="context"> 
+        <eannotations xmi:id="_taKvkztuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel"> 
+         <details xmi:id="_taKvlDtuEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."></details> 
+        </eannotations> 
+        <egenerictype xmi:id="_taKvlTtuEemVvrziPwI6Kw"> 
+         <etypearguments xmi:id="_taLWoDtuEemVvrziPwI6Kw"> 
+          <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" /> 
+         </etypearguments> 
+         <etypearguments xmi:id="_taLWoTtuEemVvrziPwI6Kw"> 
+          <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" /> 
+         </etypearguments> 
+         <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap" /> 
+        </egenerictype> 
+       </eparameters> 
+      </eoperations> 
+      <eoperations xmi:id="_taL9sjtuEemVvrziPwI6Kw" name="CheckNavigability"> 
+       <eannotations xmi:id="_taNy4DtuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL"> 
+        <details xmi:id="_taNy4TtuEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let AuthorEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_AuthoredEntry->notEmpty()), AuthoredEntryEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_Author->notEmpty())in if AuthoredEntryEnd->notEmpty() and AuthorEnd->notEmpty() then AuthoredEntryEnd->first().isNavigable() = true and AuthorEnd->first().isNavigable() = false else false endif"></details> 
+       </eannotations> 
+       <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean" /> 
+       <eparameters xmi:id="_taL9tDtuEemVvrziPwI6Kw" name="diagnostics"> 
+        <eannotations xmi:id="_taL9tTtuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel"> 
+         <details xmi:id="_taL9tjtuEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."></details> 
+        </eannotations> 
+        <etype xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain" /> 
+       </eparameters> 
+       <eparameters xmi:id="_taMkwTtuEemVvrziPwI6Kw" name="context"> 
+        <eannotations xmi:id="_taMkwjtuEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel"> 
+         <details xmi:id="_taMkwztuEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."></details> 
+        </eannotations> 
+        <egenerictype xmi:id="_taMkxDtuEemVvrziPwI6Kw"> 
+         <etypearguments xmi:id="_taNL0DtuEemVvrziPwI6Kw"> 
+          <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" /> 
+         </etypearguments> 
+         <etypearguments xmi:id="_taNL0TtuEemVvrziPwI6Kw"> 
+          <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" /> 
+         </etypearguments> 
+         <eclassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap" /> 
+        </egenerictype> 
+       </eparameters> 
+      </eoperations> 
+      <estructuralfeatures xmi:type="ecore:EReference" xmi:id="_taBloDtuEemVvrziPwI6Kw" name="base_Association" ordered="false" lowerbound="1"> 
+       <etype xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association" /> 
+      </estructuralfeatures> 
+     </eclassifiers> 
+    </contents> 
+   </eannotations> 
+   <elementimport xmi:id="_tZrAWTtuEemVvrziPwI6Kw" alias="Association"> 
+    <importedelement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association" /> 
+   </elementimport> 
+   <elementimport xmi:id="_tae4oTtuEemVvrziPwI6Kw" alias="Class"> 
+    <importedelement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class" /> 
+   </elementimport> 
+   <elementimport xmi:id="_tbdwETtuEemVvrziPwI6Kw" alias="Artifact"> 
+    <importedelement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+   </elementimport> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZiddDtuEemVvrziPwI6Kw" name="BibTeXFile"> 
+    <ownedattribute xmi:id="_taOZ8DtuEemVvrziPwI6Kw" name="entries" type="_tZiddjtuEemVvrziPwI6Kw" aggregation="composite" association="_taOZ8ztuEemVvrziPwI6Kw"> 
+     <lowervalue xmi:type="uml:LiteralInteger" xmi:id="_taOZ8TtuEemVvrziPwI6Kw" /> 
+     <uppervalue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_taOZ8jtuEemVvrziPwI6Kw" value="*" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_tae4oDtuEemVvrziPwI6Kw" name="base_Class" association="_taoCkDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZiddTtuEemVvrziPwI6Kw" name="Author"> 
+    <ownedattribute xmi:id="_tZjEgjtuEemVvrziPwI6Kw" name="author"> 
+     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_tasUADtuEemVvrziPwI6Kw" name="base_Class" association="_taxzkDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZiddjtuEemVvrziPwI6Kw" name="BibTeXEntry" isabstract="true"> 
+    <ownedattribute xmi:id="_tZjrlDtuEemVvrziPwI6Kw" name="theId"> 
+     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_ta2FADtuEemVvrziPwI6Kw" name="base_Class" association="_ta8LoDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZiddztuEemVvrziPwI6Kw" name="AuthoredEntry" isabstract="true"> 
+    <generalization xmi:id="_taPoEDtuEemVvrziPwI6Kw" general="_tZiddjtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_taPoEjtuEemVvrziPwI6Kw" name="authors" type="_tZiddTtuEemVvrziPwI6Kw" aggregation="composite" association="_taPoFTtuEemVvrziPwI6Kw"> 
+     <lowervalue xmi:type="uml:LiteralInteger" xmi:id="_taPoEztuEemVvrziPwI6Kw" value="1" /> 
+     <uppervalue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_taPoFDtuEemVvrziPwI6Kw" value="*" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_ta_2ADtuEemVvrziPwI6Kw" name="base_Class" association="_tbDgYDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZideDtuEemVvrziPwI6Kw" name="DatedEntry" isabstract="true"> 
+    <generalization xmi:id="_taQ2MDtuEemVvrziPwI6Kw" general="_tZiddjtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tZk5sjtuEemVvrziPwI6Kw" name="year"> 
+     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_tbHKwDtuEemVvrziPwI6Kw" name="base_Class" association="_tbKOEDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZideTtuEemVvrziPwI6Kw" name="TitledEntry" isabstract="true"> 
+    <generalization xmi:id="_taQ2MjtuEemVvrziPwI6Kw" general="_tZiddjtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tZlgxDtuEemVvrziPwI6Kw" name="title"> 
+     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_tbPGkDtuEemVvrziPwI6Kw" name="base_Class" association="_tbSJ4DtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidejtuEemVvrziPwI6Kw" name="BookTitledEntry" isabstract="true"> 
+    <generalization xmi:id="_taRdQTtuEemVvrziPwI6Kw" general="_tZiddjtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tZmH1DtuEemVvrziPwI6Kw" name="booktitle"> 
+     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_tbWbUDtuEemVvrziPwI6Kw" name="base_Class" association="_tbaFsDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZideztuEemVvrziPwI6Kw" name="Article"> 
+    <generalization xmi:id="_taSEUTtuEemVvrziPwI6Kw" general="_tZiddztuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taSrYTtuEemVvrziPwI6Kw" general="_tZideDtuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taSrYztuEemVvrziPwI6Kw" general="_tZideTtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tZmu5DtuEemVvrziPwI6Kw" name="journal"> 
+     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_tbdwEDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tbmS8DtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidfDtuEemVvrziPwI6Kw" name="TechReport"> 
+    <generalization xmi:id="_taTScDtuEemVvrziPwI6Kw" general="_tZiddztuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taTScjtuEemVvrziPwI6Kw" general="_tZideDtuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taT5gTtuEemVvrziPwI6Kw" general="_tZideTtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tbqkYDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tbwD8DtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidfTtuEemVvrziPwI6Kw" name="Unpublished"> 
+    <generalization xmi:id="_taUgkDtuEemVvrziPwI6Kw" general="_tZiddztuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taUgkjtuEemVvrziPwI6Kw" general="_tZideTtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tZnV9jtuEemVvrziPwI6Kw" name="note"> 
+     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_tbzuUDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tb5N4DtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidfjtuEemVvrziPwI6Kw" name="Manual"> 
+    <generalization xmi:id="_taVHoDtuEemVvrziPwI6Kw" general="_tZideTtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tb84QDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tcCX0DtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidfztuEemVvrziPwI6Kw" name="Proceedings"> 
+    <generalization xmi:id="_taVusDtuEemVvrziPwI6Kw" general="_tZideDtuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taVusjtuEemVvrziPwI6Kw" general="_tZideTtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tcGpQDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tcMI0DtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidgDtuEemVvrziPwI6Kw" name="InProceedings"> 
+    <generalization xmi:id="_taWVwDtuEemVvrziPwI6Kw" general="_tZidfztuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taWVwjtuEemVvrziPwI6Kw" general="_tZiddztuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taW80TtuEemVvrziPwI6Kw" general="_tZidejtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tcQaQDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tcUEoDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidgTtuEemVvrziPwI6Kw" name="Booklet"> 
+    <generalization xmi:id="_taXj4DtuEemVvrziPwI6Kw" general="_tZideDtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tcYWEDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tcd1oDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidgjtuEemVvrziPwI6Kw" name="Book"> 
+    <generalization xmi:id="_taYK8DtuEemVvrziPwI6Kw" general="_tZiddztuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taYK8jtuEemVvrziPwI6Kw" general="_tZideDtuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taYyATtuEemVvrziPwI6Kw" general="_tZideTtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tZokGDtuEemVvrziPwI6Kw" name="publisher"> 
+     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_tciuIDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tcoNsDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidgztuEemVvrziPwI6Kw" name="InCollection"> 
+    <generalization xmi:id="_taZZEDtuEemVvrziPwI6Kw" general="_tZidgjtuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taaAITtuEemVvrziPwI6Kw" general="_tZidejtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tcsfIDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tcwJgDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidhDtuEemVvrziPwI6Kw" name="InBook"> 
+    <generalization xmi:id="_taanMDtuEemVvrziPwI6Kw" general="_tZidgjtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tZpyMjtuEemVvrziPwI6Kw" name="chapter"> 
+     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EIntegerObject" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_tczz4DtuEemVvrziPwI6Kw" name="base_Artifact" association="_tc23MDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidhTtuEemVvrziPwI6Kw" name="Misc"> 
+    <generalization xmi:id="_tabOQDtuEemVvrziPwI6Kw" general="_tZiddjtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tc7vsDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tdB2UDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidhjtuEemVvrziPwI6Kw" name="ThesisEntry" isabstract="true"> 
+    <generalization xmi:id="_tab1UDtuEemVvrziPwI6Kw" general="_tZiddztuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_tab1UjtuEemVvrziPwI6Kw" general="_tZideDtuEemVvrziPwI6Kw" /> 
+    <generalization xmi:id="_taccYTtuEemVvrziPwI6Kw" general="_tZideTtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tZqZQztuEemVvrziPwI6Kw" name="school"> 
+     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString" /> 
+    </ownedattribute> 
+    <ownedattribute xmi:id="_tdGu0DtuEemVvrziPwI6Kw" name="base_Artifact" association="_tdLnUDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidhztuEemVvrziPwI6Kw" name="PhDThesis"> 
+    <generalization xmi:id="_tadDcDtuEemVvrziPwI6Kw" general="_tZidhjtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tdP4wDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tdUKMDtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidiDtuEemVvrziPwI6Kw" name="MasterThesis"> 
+    <generalization xmi:id="_tadqgTtuEemVvrziPwI6Kw" general="_tZidhjtuEemVvrziPwI6Kw" /> 
+    <ownedattribute xmi:id="_tdX0kDtuEemVvrziPwI6Kw" name="base_Artifact" association="_tdbe8DtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidiTtuEemVvrziPwI6Kw" name="entries"> 
+    <ownedrule xmi:id="_tZ5p0DtuEemVvrziPwI6Kw" name="CheckEndTypes" constrainedelement="_tZidiTtuEemVvrziPwI6Kw"> 
+     <specification xmi:type="uml:OpaqueExpression" xmi:id="_tZ5p0TtuEemVvrziPwI6Kw"> 
+      <language>
+       OCL
+      </language> let source = self.base_Association.endType-&gt;selectByKind(UML::Class), target = self.base_Association.endType-&gt;selectByKind(UML::Class) in source-&gt;exists(c|c.extension_BibTeXFile-&gt;notEmpty()) and target-&gt;exists(c|c.extension_BibTeXEntry -&gt; notEmpty()) 
+     </specification> 
+    </ownedrule> 
+    <ownedrule xmi:id="_tZ7fAztuEemVvrziPwI6Kw" name="CheckNavigability" constrainedelement="_tZidiTtuEemVvrziPwI6Kw"> 
+     <specification xmi:type="uml:OpaqueExpression" xmi:id="_tZ8GEDtuEemVvrziPwI6Kw"> 
+      <language>
+       OCL
+      </language> let memberEnds = self.base_Association.memberEnd in let BibTeXEntryEnd = memberEnds-&gt;select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_BibTeXFile-&gt;notEmpty()), BibTeXFileEnd = memberEnds-&gt;select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_BibTeXEntry-&gt;notEmpty())in if BibTeXFileEnd-&gt;notEmpty() and BibTeXEntryEnd-&gt;notEmpty() then BibTeXFileEnd-&gt;first().isNavigable() = true and BibTeXEntryEnd-&gt;first().isNavigable() = false else false endif 
+     </specification> 
+    </ownedrule> 
+    <ownedattribute xmi:id="_tZrAWDtuEemVvrziPwI6Kw" name="base_Association" association="_tZy8ITtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tZy8ITtuEemVvrziPwI6Kw" name="E_entries_Association1" memberend="_tZy8IjtuEemVvrziPwI6Kw _tZrAWDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tZy8IjtuEemVvrziPwI6Kw" name="extension_entries" type="_tZidiTtuEemVvrziPwI6Kw" aggregation="composite" association="_tZy8ITtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Stereotype" xmi:id="_tZidijtuEemVvrziPwI6Kw" name="authors"> 
+    <ownedrule xmi:id="_taJhcjtuEemVvrziPwI6Kw" name="CheckEndTypes" constrainedelement="_tZidijtuEemVvrziPwI6Kw"> 
+     <specification xmi:type="uml:OpaqueExpression" xmi:id="_taJhcztuEemVvrziPwI6Kw"> 
+      <language>
+       OCL
+      </language> let source = self.base_Association.endType-&gt;selectByKind(UML::Class), target = self.base_Association.endType-&gt;selectByKind(UML::Class) in source-&gt;exists(c|c.extension_AuthoredEntry-&gt;notEmpty()) and target-&gt;exists(c|c.extension_Author -&gt; notEmpty()) 
+     </specification> 
+    </ownedrule> 
+    <ownedrule xmi:id="_taL9sDtuEemVvrziPwI6Kw" name="CheckNavigability" constrainedelement="_tZidijtuEemVvrziPwI6Kw"> 
+     <specification xmi:type="uml:OpaqueExpression" xmi:id="_taL9sTtuEemVvrziPwI6Kw"> 
+      <language>
+       OCL
+      </language> let memberEnds = self.base_Association.memberEnd in let AuthorEnd = memberEnds-&gt;select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_AuthoredEntry-&gt;notEmpty()), AuthoredEntryEnd = memberEnds-&gt;select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_Author-&gt;notEmpty())in if AuthoredEntryEnd-&gt;notEmpty() and AuthorEnd-&gt;notEmpty() then AuthoredEntryEnd-&gt;first().isNavigable() = true and AuthorEnd-&gt;first().isNavigable() = false else false endif 
+     </specification> 
+    </ownedrule> 
+    <ownedattribute xmi:id="_tZ97RDtuEemVvrziPwI6Kw" name="base_Association" association="_taBloTtuEemVvrziPwI6Kw"> 
+     <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association" /> 
+    </ownedattribute> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_taBloTtuEemVvrziPwI6Kw" name="E_authors_Association1" memberend="_taBlojtuEemVvrziPwI6Kw _tZ97RDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_taBlojtuEemVvrziPwI6Kw" name="extension_authors" type="_tZidijtuEemVvrziPwI6Kw" aggregation="composite" association="_taBloTtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Association" xmi:id="_taOZ8ztuEemVvrziPwI6Kw" memberend="_taOZ9DtuEemVvrziPwI6Kw _taOZ8DtuEemVvrziPwI6Kw"> 
+    <eannotations xmi:id="_taOZ9ztuEemVvrziPwI6Kw" source="org.eclipse.papyrus"> 
+     <details xmi:id="_taOZ-DtuEemVvrziPwI6Kw" key="nature" value="UML_Nature"></details> 
+    </eannotations> 
+    <ownedend xmi:id="_taOZ9DtuEemVvrziPwI6Kw" name="BibTeXFileEnd" type="_tZiddDtuEemVvrziPwI6Kw" association="_taOZ8ztuEemVvrziPwI6Kw"> 
+     <lowervalue xmi:type="uml:LiteralInteger" xmi:id="_taOZ9TtuEemVvrziPwI6Kw" /> 
+     <uppervalue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_taOZ9jtuEemVvrziPwI6Kw" value="1" /> 
+    </ownedend> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Association" xmi:id="_taPoFTtuEemVvrziPwI6Kw" memberend="_taQPIDtuEemVvrziPwI6Kw _taPoEjtuEemVvrziPwI6Kw"> 
+    <eannotations xmi:id="_taQPIztuEemVvrziPwI6Kw" source="org.eclipse.papyrus"> 
+     <details xmi:id="_taQPJDtuEemVvrziPwI6Kw" key="nature" value="UML_Nature"></details> 
+    </eannotations> 
+    <ownedend xmi:id="_taQPIDtuEemVvrziPwI6Kw" name="AuthoredEntryEnd" type="_tZiddztuEemVvrziPwI6Kw" association="_taPoFTtuEemVvrziPwI6Kw"> 
+     <lowervalue xmi:type="uml:LiteralInteger" xmi:id="_taQPITtuEemVvrziPwI6Kw" value="1" /> 
+     <uppervalue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_taQPIjtuEemVvrziPwI6Kw" value="1" /> 
+    </ownedend> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_taoCkDtuEemVvrziPwI6Kw" name="E_BibTeXFile_Class1" memberend="_taoCkTtuEemVvrziPwI6Kw _tae4oDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_taoCkTtuEemVvrziPwI6Kw" name="extension_BibTeXFile" type="_tZiddDtuEemVvrziPwI6Kw" aggregation="composite" association="_taoCkDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_taxzkDtuEemVvrziPwI6Kw" name="E_Author_Class1" memberend="_taxzkTtuEemVvrziPwI6Kw _tasUADtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_taxzkTtuEemVvrziPwI6Kw" name="extension_Author" type="_tZiddTtuEemVvrziPwI6Kw" aggregation="composite" association="_taxzkDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_ta8LoDtuEemVvrziPwI6Kw" name="E_BibTeXEntry_Class1" memberend="_ta8LoTtuEemVvrziPwI6Kw _ta2FADtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_ta8LoTtuEemVvrziPwI6Kw" name="extension_BibTeXEntry" type="_tZiddjtuEemVvrziPwI6Kw" aggregation="composite" association="_ta8LoDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tbDgYDtuEemVvrziPwI6Kw" name="E_AuthoredEntry_Class1" memberend="_tbDgYTtuEemVvrziPwI6Kw _ta_2ADtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tbDgYTtuEemVvrziPwI6Kw" name="extension_AuthoredEntry" type="_tZiddztuEemVvrziPwI6Kw" aggregation="composite" association="_tbDgYDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tbKOEDtuEemVvrziPwI6Kw" name="E_DatedEntry_Class1" memberend="_tbKOETtuEemVvrziPwI6Kw _tbHKwDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tbKOETtuEemVvrziPwI6Kw" name="extension_DatedEntry" type="_tZideDtuEemVvrziPwI6Kw" aggregation="composite" association="_tbKOEDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tbSJ4DtuEemVvrziPwI6Kw" name="E_TitledEntry_Class1" memberend="_tbSJ4TtuEemVvrziPwI6Kw _tbPGkDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tbSJ4TtuEemVvrziPwI6Kw" name="extension_TitledEntry" type="_tZideTtuEemVvrziPwI6Kw" aggregation="composite" association="_tbSJ4DtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tbaFsDtuEemVvrziPwI6Kw" name="E_BookTitledEntry_Class1" memberend="_tbaFsTtuEemVvrziPwI6Kw _tbWbUDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tbaFsTtuEemVvrziPwI6Kw" name="extension_BookTitledEntry" type="_tZidejtuEemVvrziPwI6Kw" aggregation="composite" association="_tbaFsDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tbmS8DtuEemVvrziPwI6Kw" name="E_Article_Artifact1" memberend="_tbmS8TtuEemVvrziPwI6Kw _tbdwEDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tbmS8TtuEemVvrziPwI6Kw" name="extension_Article" type="_tZideztuEemVvrziPwI6Kw" aggregation="composite" association="_tbmS8DtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tbwD8DtuEemVvrziPwI6Kw" name="E_TechReport_Artifact1" memberend="_tbwD8TtuEemVvrziPwI6Kw _tbqkYDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tbwD8TtuEemVvrziPwI6Kw" name="extension_TechReport" type="_tZidfDtuEemVvrziPwI6Kw" aggregation="composite" association="_tbwD8DtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tb5N4DtuEemVvrziPwI6Kw" name="E_Unpublished_Artifact1" memberend="_tb5N4TtuEemVvrziPwI6Kw _tbzuUDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tb5N4TtuEemVvrziPwI6Kw" name="extension_Unpublished" type="_tZidfTtuEemVvrziPwI6Kw" aggregation="composite" association="_tb5N4DtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tcCX0DtuEemVvrziPwI6Kw" name="E_Manual_Artifact1" memberend="_tcCX0TtuEemVvrziPwI6Kw _tb84QDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tcCX0TtuEemVvrziPwI6Kw" name="extension_Manual" type="_tZidfjtuEemVvrziPwI6Kw" aggregation="composite" association="_tcCX0DtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tcMI0DtuEemVvrziPwI6Kw" name="E_Proceedings_Artifact1" memberend="_tcMI0TtuEemVvrziPwI6Kw _tcGpQDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tcMI0TtuEemVvrziPwI6Kw" name="extension_Proceedings" type="_tZidfztuEemVvrziPwI6Kw" aggregation="composite" association="_tcMI0DtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tcUEoDtuEemVvrziPwI6Kw" name="E_InProceedings_Artifact1" memberend="_tcUEoTtuEemVvrziPwI6Kw _tcQaQDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tcUEoTtuEemVvrziPwI6Kw" name="extension_InProceedings" type="_tZidgDtuEemVvrziPwI6Kw" aggregation="composite" association="_tcUEoDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tcd1oDtuEemVvrziPwI6Kw" name="E_Booklet_Artifact1" memberend="_tcd1oTtuEemVvrziPwI6Kw _tcYWEDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tcd1oTtuEemVvrziPwI6Kw" name="extension_Booklet" type="_tZidgTtuEemVvrziPwI6Kw" aggregation="composite" association="_tcd1oDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tcoNsDtuEemVvrziPwI6Kw" name="E_Book_Artifact1" memberend="_tcoNsTtuEemVvrziPwI6Kw _tciuIDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tcoNsTtuEemVvrziPwI6Kw" name="extension_Book" type="_tZidgjtuEemVvrziPwI6Kw" aggregation="composite" association="_tcoNsDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tcwJgDtuEemVvrziPwI6Kw" name="E_InCollection_Artifact1" memberend="_tcwJgTtuEemVvrziPwI6Kw _tcsfIDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tcwJgTtuEemVvrziPwI6Kw" name="extension_InCollection" type="_tZidgztuEemVvrziPwI6Kw" aggregation="composite" association="_tcwJgDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tc23MDtuEemVvrziPwI6Kw" name="E_InBook_Artifact1" memberend="_tc23MTtuEemVvrziPwI6Kw _tczz4DtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tc23MTtuEemVvrziPwI6Kw" name="extension_InBook" type="_tZidhDtuEemVvrziPwI6Kw" aggregation="composite" association="_tc23MDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tdB2UDtuEemVvrziPwI6Kw" name="E_Misc_Artifact1" memberend="_tdB2UTtuEemVvrziPwI6Kw _tc7vsDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tdB2UTtuEemVvrziPwI6Kw" name="extension_Misc" type="_tZidhTtuEemVvrziPwI6Kw" aggregation="composite" association="_tdB2UDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tdLnUDtuEemVvrziPwI6Kw" name="E_ThesisEntry_Artifact1" memberend="_tdLnUTtuEemVvrziPwI6Kw _tdGu0DtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tdLnUTtuEemVvrziPwI6Kw" name="extension_ThesisEntry" type="_tZidhjtuEemVvrziPwI6Kw" aggregation="composite" association="_tdLnUDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tdUKMDtuEemVvrziPwI6Kw" name="E_PhDThesis_Artifact1" memberend="_tdUKMTtuEemVvrziPwI6Kw _tdP4wDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tdUKMTtuEemVvrziPwI6Kw" name="extension_PhDThesis" type="_tZidhztuEemVvrziPwI6Kw" aggregation="composite" association="_tdUKMDtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+   <packagedelement xmi:type="uml:Extension" xmi:id="_tdbe8DtuEemVvrziPwI6Kw" name="E_MasterThesis_Artifact1" memberend="_tdbe8TtuEemVvrziPwI6Kw _tdX0kDtuEemVvrziPwI6Kw"> 
+    <ownedend xmi:type="uml:ExtensionEnd" xmi:id="_tdbe8TtuEemVvrziPwI6Kw" name="extension_MasterThesis" type="_tZidiDtuEemVvrziPwI6Kw" aggregation="composite" association="_tdbe8DtuEemVvrziPwI6Kw" /> 
+   </packagedelement> 
+  </uml:profile> 
+ </body>
+</html>
