@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"> 
+ <uml:Model xmi:id="_G1PsYOKGEeiZY7VjYQykuQ" name="model"> 
+  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+   <eAnnotations xmi:id="_G1PsYOKGEeiZY7VjYQykuQ0" source="genmymodel"> 
+    <details xmi:id="_G1PsYOKGEeiZY7VjYQykuQ00" key="uuid" value="_G1PsYOKGEeiZY7VjYQykuQ"></details> 
+    <details xmi:id="_G1PsYOKGEeiZY7VjYQykuQ01" key="author" value="kjallad58"></details> 
+   </eAnnotations> 
+  </xmi:Extension> 
+  <packageImport xmi:id="_G1QTcOKGEeiZY7VjYQykuQ" importingNamespace="_G1PsYOKGEeiZY7VjYQykuQ"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_G1QTcOKGEeiZY7VjYQykuQ0" source="genmymodel"> 
+     <details xmi:id="_G1QTcOKGEeiZY7VjYQykuQ00" key="uuid" value="_G1QTcOKGEeiZY7VjYQykuQ"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#/" /> 
+  </packageImport> 
+  <packagedElement xsi:type="uml:Component" xmi:id="_F9_nEMTAEDajY-Kly18mbA" name="Geldautomat"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_F9_nEMTAEDajY-Kly18mbA0" source="genmymodel"> 
+     <details xmi:id="_F9_nEMTAEDajY-Kly18mbA00" key="uuid" value="_F9_nEMTAEDajY-Kly18mbA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedComment xmi:id="_R04qocTCEDajY-Kly18mbA" annotatedElement="_9c3BkMTBEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_R04qocTCEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_R04qocTCEDajY-Kly18mbA00" key="uuid" value="_R04qocTCEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <body>
+     Condition: (Wenn die PIN falsche eingegeben wird).
+    </body> 
+   </ownedComment> 
+   <ownedComment xmi:id="_DDvfoMTEEDajY-Kly18mbA" annotatedElement="_piWwEMTDEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_DDvfoMTEEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_DDvfoMTEEDajY-Kly18mbA00" key="uuid" value="_DDvfoMTEEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <body>
+     Condition: ( Wenn der Kontostand fur den Abhebebetrag zu niedrig ist )
+    </body> 
+   </ownedComment> 
+   <ownedUseCase xmi:id="_rzjeAcTAEDajY-Kly18mbA" name="GeldAbheben"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_rzjeAcTAEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_rzjeAcTAEDajY-Kly18mbA00" key="uuid" value="_rzjeAcTAEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <extensionPoint xmi:id="_piWJAsTDEDajY-Kly18mbA" name="der Kontostand fur den Abhebebetrag ist zu niedrig" useCase="_rzjeAcTAEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_piWJAsTDEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_piWJAsTDEDajY-Kly18mbA00" key="uuid" value="_piWJAsTDEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </extensionPoint> 
+    <include xmi:id="_VRUKscTBEDajY-Kly18mbA" addition="_85iHgMTAEDajY-Kly18mbA" includingCase="_rzjeAcTAEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_VRUKscTBEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_VRUKscTBEDajY-Kly18mbA00" key="uuid" value="_VRUKscTBEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </include> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_u2oNccTAEDajY-Kly18mbA" name="GeldEinzahlen"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_u2oNccTAEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_u2oNccTAEDajY-Kly18mbA00" key="uuid" value="_u2oNccTAEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_xZnuocTAEDajY-Kly18mbA" name="KontostandAbfragen"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_xZnuocTAEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_xZnuocTAEDajY-Kly18mbA00" key="uuid" value="_xZnuocTAEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <include xmi:id="_WBecUMTBEDajY-Kly18mbA" addition="_85iHgMTAEDajY-Kly18mbA" includingCase="_xZnuocTAEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_WBecUMTBEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_WBecUMTBEDajY-Kly18mbA00" key="uuid" value="_WBecUMTBEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </include> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_85iHgMTAEDajY-Kly18mbA" name="PINEingeben"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_85iHgMTAEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_85iHgMTAEDajY-Kly18mbA00" key="uuid" value="_85iHgMTAEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <extensionPoint xmi:id="_YAzPwMTBEDajY-Kly18mbA" name="falsche PIN" useCase="_85iHgMTAEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_YAzPwMTBEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_YAzPwMTBEDajY-Kly18mbA00" key="uuid" value="_YAzPwMTBEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </extensionPoint> 
+    <include xmi:id="_wGZ90MTBEDajY-Kly18mbA" addition="_ilSiMMTBEDajY-Kly18mbA" includingCase="_85iHgMTAEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_wGZ90MTBEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_wGZ90MTBEDajY-Kly18mbA00" key="uuid" value="_wGZ90MTBEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </include> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_ilSiMMTBEDajY-Kly18mbA" name="BankServer Kontrolle"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_ilSiMMTBEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_ilSiMMTBEDajY-Kly18mbA00" key="uuid" value="_ilSiMMTBEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_y_viccTBEDajY-Kly18mbA" name="Anzeige: falsche PIN"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_y_viccTBEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_y_viccTBEDajY-Kly18mbA00" key="uuid" value="_y_viccTBEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <extend xmi:id="_9c3BkMTBEDajY-Kly18mbA" extendedCase="_85iHgMTAEDajY-Kly18mbA" extensionLocation="_9c2agcTBEDajY-Kly18mbA" extension="_y_viccTBEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_9c3BkMTBEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_9c3BkMTBEDajY-Kly18mbA00" key="uuid" value="_9c3BkMTBEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </extend> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_ImjdYcTDEDajY-Kly18mbA" name="Anzeige: zu niedriger Kontostand"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_ImjdYcTDEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_ImjdYcTDEDajY-Kly18mbA00" key="uuid" value="_ImjdYcTDEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <extend xmi:id="_piWwEMTDEDajY-Kly18mbA" extendedCase="_rzjeAcTAEDajY-Kly18mbA" extensionLocation="_piWJAsTDEDajY-Kly18mbA" extension="_ImjdYcTDEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_piWwEMTDEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_piWwEMTDEDajY-Kly18mbA00" key="uuid" value="_piWwEMTDEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </extend> 
+   </ownedUseCase> 
+   <packagedElement xsi:type="uml:Association" xmi:id="__mrtccTEEDajY-Kly18mbA" name="GeldAbheben_Der Automat" memberEnd="__mrGY8TEEDajY-Kly18mbA __mrGYMTEEDajY-Kly18mbA" navigableOwnedEnd="__mrGY8TEEDajY-Kly18mbA __mrGYMTEEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="__mrtccTEEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="__mrtccTEEDajY-Kly18mbA00" key="uuid" value="__mrtccTEEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="__mrGY8TEEDajY-Kly18mbA" name="der Automat" type="_391FscTEEDajY-Kly18mbA" owningAssociation="__mrtccTEEDajY-Kly18mbA" association="__mrtccTEEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="__mrGY8TEEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="__mrGY8TEEDajY-Kly18mbA00" key="uuid" value="__mrGY8TEEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="__mrGZMTEEDajY-Kly18mbA"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="__mrGZMTEEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="__mrGZMTEEDajY-Kly18mbA00" key="uuid" value="__mrGZMTEEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </lowerValue> 
+     <upperValue xsi:type="uml:LiteralInteger" xmi:id="__mrtcMTEEDajY-Kly18mbA" value="1"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="__mrtcMTEEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="__mrtcMTEEDajY-Kly18mbA00" key="uuid" value="__mrtcMTEEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </upperValue> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="__mrGYMTEEDajY-Kly18mbA" name="geldAbheben" type="_rzjeAcTAEDajY-Kly18mbA" owningAssociation="__mrtccTEEDajY-Kly18mbA" association="__mrtccTEEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="__mrGYMTEEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="__mrGYMTEEDajY-Kly18mbA00" key="uuid" value="__mrGYMTEEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="__mrGYcTEEDajY-Kly18mbA"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="__mrGYcTEEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="__mrGYcTEEDajY-Kly18mbA00" key="uuid" value="__mrGYcTEEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </lowerValue> 
+     <upperValue xsi:type="uml:LiteralInteger" xmi:id="__mrGYsTEEDajY-Kly18mbA" value="1"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="__mrGYsTEEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="__mrGYsTEEDajY-Kly18mbA00" key="uuid" value="__mrGYsTEEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </upperValue> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Association" xmi:id="_ARFVVsTFEDajY-Kly18mbA" name="KontostandAbfragen_Der Automat" memberEnd="_ARFVU8TFEDajY-Kly18mbA _ARFVUMTFEDajY-Kly18mbA" navigableOwnedEnd="_ARFVU8TFEDajY-Kly18mbA _ARFVUMTFEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_ARFVVsTFEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_ARFVVsTFEDajY-Kly18mbA00" key="uuid" value="_ARFVVsTFEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_ARFVU8TFEDajY-Kly18mbA" name="der Automat" type="_391FscTEEDajY-Kly18mbA" owningAssociation="_ARFVVsTFEDajY-Kly18mbA" association="_ARFVVsTFEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_ARFVU8TFEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_ARFVU8TFEDajY-Kly18mbA00" key="uuid" value="_ARFVU8TFEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_ARFVVMTFEDajY-Kly18mbA"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="_ARFVVMTFEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="_ARFVVMTFEDajY-Kly18mbA00" key="uuid" value="_ARFVVMTFEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </lowerValue> 
+     <upperValue xsi:type="uml:LiteralInteger" xmi:id="_ARFVVcTFEDajY-Kly18mbA" value="1"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="_ARFVVcTFEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="_ARFVVcTFEDajY-Kly18mbA00" key="uuid" value="_ARFVVcTFEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </upperValue> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_ARFVUMTFEDajY-Kly18mbA" name="kontostandAbfragen" type="_xZnuocTAEDajY-Kly18mbA" owningAssociation="_ARFVVsTFEDajY-Kly18mbA" association="_ARFVVsTFEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_ARFVUMTFEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_ARFVUMTFEDajY-Kly18mbA00" key="uuid" value="_ARFVUMTFEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_ARFVUcTFEDajY-Kly18mbA"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="_ARFVUcTFEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="_ARFVUcTFEDajY-Kly18mbA00" key="uuid" value="_ARFVUcTFEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </lowerValue> 
+     <upperValue xsi:type="uml:LiteralInteger" xmi:id="_ARFVUsTFEDajY-Kly18mbA" value="1"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="_ARFVUsTFEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="_ARFVUsTFEDajY-Kly18mbA00" key="uuid" value="_ARFVUsTFEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </upperValue> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Association" xmi:id="_A4HgJcTFEDajY-Kly18mbA" name="GeldEinzahlen_Der Automat" memberEnd="_A4HgIsTFEDajY-Kly18mbA _A4G5EsTFEDajY-Kly18mbA" navigableOwnedEnd="_A4HgIsTFEDajY-Kly18mbA _A4G5EsTFEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_A4HgJcTFEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_A4HgJcTFEDajY-Kly18mbA00" key="uuid" value="_A4HgJcTFEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_A4HgIsTFEDajY-Kly18mbA" name="der Automat" type="_391FscTEEDajY-Kly18mbA" owningAssociation="_A4HgJcTFEDajY-Kly18mbA" association="_A4HgJcTFEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_A4HgIsTFEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_A4HgIsTFEDajY-Kly18mbA00" key="uuid" value="_A4HgIsTFEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_A4HgI8TFEDajY-Kly18mbA"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="_A4HgI8TFEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="_A4HgI8TFEDajY-Kly18mbA00" key="uuid" value="_A4HgI8TFEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </lowerValue> 
+     <upperValue xsi:type="uml:LiteralInteger" xmi:id="_A4HgJMTFEDajY-Kly18mbA" value="1"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="_A4HgJMTFEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="_A4HgJMTFEDajY-Kly18mbA00" key="uuid" value="_A4HgJMTFEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </upperValue> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_A4G5EsTFEDajY-Kly18mbA" name="geldEinzahlen" type="_u2oNccTAEDajY-Kly18mbA" owningAssociation="_A4HgJcTFEDajY-Kly18mbA" association="_A4HgJcTFEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_A4G5EsTFEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_A4G5EsTFEDajY-Kly18mbA00" key="uuid" value="_A4G5EsTFEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_A4HgIMTFEDajY-Kly18mbA"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="_A4HgIMTFEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="_A4HgIMTFEDajY-Kly18mbA00" key="uuid" value="_A4HgIMTFEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </lowerValue> 
+     <upperValue xsi:type="uml:LiteralInteger" xmi:id="_A4HgIcTFEDajY-Kly18mbA" value="1"> 
+      <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+       <eAnnotations xmi:id="_A4HgIcTFEDajY-Kly18mbA0" source="genmymodel"> 
+        <details xmi:id="_A4HgIcTFEDajY-Kly18mbA00" key="uuid" value="_A4HgIcTFEDajY-Kly18mbA"></details> 
+       </eAnnotations> 
+      </xmi:Extension> 
+     </upperValue> 
+    </ownedEnd> 
+   </packagedElement> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Actor" xmi:id="_OGLPIMTAEDajY-Kly18mbA" name="Benutzer"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_OGLPIMTAEDajY-Kly18mbA0" source="genmymodel"> 
+     <details xmi:id="_OGLPIMTAEDajY-Kly18mbA00" key="uuid" value="_OGLPIMTAEDajY-Kly18mbA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Actor" xmi:id="_bvC4kcTAEDajY-Kly18mbA" name="Kunde der Bank"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_bvC4kcTAEDajY-Kly18mbA0" source="genmymodel"> 
+     <details xmi:id="_bvC4kcTAEDajY-Kly18mbA00" key="uuid" value="_bvC4kcTAEDajY-Kly18mbA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <generalization xmi:id="_o8S9AMTAEDajY-Kly18mbA" general="_OGLPIMTAEDajY-Kly18mbA" specific="_bvC4kcTAEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_o8S9AMTAEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_o8S9AMTAEDajY-Kly18mbA00" key="uuid" value="_o8S9AMTAEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </generalization> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_GwKY8cTCEDajY-Kly18mbA" name="Benutzer_GeldAbheben" memberEnd="_GwJx5cTCEDajY-Kly18mbA _GwJx4sTCEDajY-Kly18mbA" navigableOwnedEnd="_GwJx5cTCEDajY-Kly18mbA _GwJx4sTCEDajY-Kly18mbA"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_GwKY8cTCEDajY-Kly18mbA0" source="genmymodel"> 
+     <details xmi:id="_GwKY8cTCEDajY-Kly18mbA00" key="uuid" value="_GwKY8cTCEDajY-Kly18mbA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_GwJx5cTCEDajY-Kly18mbA" name="geldAbheben" type="_rzjeAcTAEDajY-Kly18mbA" owningAssociation="_GwKY8cTCEDajY-Kly18mbA" association="_GwKY8cTCEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_GwJx5cTCEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_GwJx5cTCEDajY-Kly18mbA00" key="uuid" value="_GwJx5cTCEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_GwJx5sTCEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_GwJx5sTCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_GwJx5sTCEDajY-Kly18mbA00" key="uuid" value="_GwJx5sTCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </lowerValue> 
+    <upperValue xsi:type="uml:LiteralInteger" xmi:id="_GwKY8MTCEDajY-Kly18mbA" value="1"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_GwKY8MTCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_GwKY8MTCEDajY-Kly18mbA00" key="uuid" value="_GwKY8MTCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </upperValue> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_GwJx4sTCEDajY-Kly18mbA" name="benutzer" type="_OGLPIMTAEDajY-Kly18mbA" owningAssociation="_GwKY8cTCEDajY-Kly18mbA" association="_GwKY8cTCEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_GwJx4sTCEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_GwJx4sTCEDajY-Kly18mbA00" key="uuid" value="_GwJx4sTCEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_GwJx48TCEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_GwJx48TCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_GwJx48TCEDajY-Kly18mbA00" key="uuid" value="_GwJx48TCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </lowerValue> 
+    <upperValue xsi:type="uml:LiteralInteger" xmi:id="_GwJx5MTCEDajY-Kly18mbA" value="1"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_GwJx5MTCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_GwJx5MTCEDajY-Kly18mbA00" key="uuid" value="_GwJx5MTCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </upperValue> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_I6W_pMTCEDajY-Kly18mbA" name="Kunde der Bank_KontostandAbfragen" memberEnd="_I6W_ocTCEDajY-Kly18mbA _I6WYkMTCEDajY-Kly18mbA" navigableOwnedEnd="_I6W_ocTCEDajY-Kly18mbA _I6WYkMTCEDajY-Kly18mbA"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_I6W_pMTCEDajY-Kly18mbA0" source="genmymodel"> 
+     <details xmi:id="_I6W_pMTCEDajY-Kly18mbA00" key="uuid" value="_I6W_pMTCEDajY-Kly18mbA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_I6W_ocTCEDajY-Kly18mbA" name="kontostandAbfragen" type="_xZnuocTAEDajY-Kly18mbA" owningAssociation="_I6W_pMTCEDajY-Kly18mbA" association="_I6W_pMTCEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_I6W_ocTCEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_I6W_ocTCEDajY-Kly18mbA00" key="uuid" value="_I6W_ocTCEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_I6W_osTCEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_I6W_osTCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_I6W_osTCEDajY-Kly18mbA00" key="uuid" value="_I6W_osTCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </lowerValue> 
+    <upperValue xsi:type="uml:LiteralInteger" xmi:id="_I6W_o8TCEDajY-Kly18mbA" value="1"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_I6W_o8TCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_I6W_o8TCEDajY-Kly18mbA00" key="uuid" value="_I6W_o8TCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </upperValue> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_I6WYkMTCEDajY-Kly18mbA" name="kunde der Bank" type="_bvC4kcTAEDajY-Kly18mbA" owningAssociation="_I6W_pMTCEDajY-Kly18mbA" association="_I6W_pMTCEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_I6WYkMTCEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_I6WYkMTCEDajY-Kly18mbA00" key="uuid" value="_I6WYkMTCEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_I6WYkcTCEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_I6WYkcTCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_I6WYkcTCEDajY-Kly18mbA00" key="uuid" value="_I6WYkcTCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </lowerValue> 
+    <upperValue xsi:type="uml:LiteralInteger" xmi:id="_I6W_oMTCEDajY-Kly18mbA" value="1"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_I6W_oMTCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_I6W_oMTCEDajY-Kly18mbA00" key="uuid" value="_I6W_oMTCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </upperValue> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_JkXl98TCEDajY-Kly18mbA" name="Kunde der Bank_GeldEinzahlen" memberEnd="_JkXl9MTCEDajY-Kly18mbA _JkXl8cTCEDajY-Kly18mbA" navigableOwnedEnd="_JkXl9MTCEDajY-Kly18mbA _JkXl8cTCEDajY-Kly18mbA"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_JkXl98TCEDajY-Kly18mbA0" source="genmymodel"> 
+     <details xmi:id="_JkXl98TCEDajY-Kly18mbA00" key="uuid" value="_JkXl98TCEDajY-Kly18mbA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_JkXl9MTCEDajY-Kly18mbA" name="geldEinzahlen" type="_u2oNccTAEDajY-Kly18mbA" owningAssociation="_JkXl98TCEDajY-Kly18mbA" association="_JkXl98TCEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_JkXl9MTCEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_JkXl9MTCEDajY-Kly18mbA00" key="uuid" value="_JkXl9MTCEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_JkXl9cTCEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_JkXl9cTCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_JkXl9cTCEDajY-Kly18mbA00" key="uuid" value="_JkXl9cTCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </lowerValue> 
+    <upperValue xsi:type="uml:LiteralInteger" xmi:id="_JkXl9sTCEDajY-Kly18mbA" value="1"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_JkXl9sTCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_JkXl9sTCEDajY-Kly18mbA00" key="uuid" value="_JkXl9sTCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </upperValue> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_JkXl8cTCEDajY-Kly18mbA" name="kunde der Bank" type="_bvC4kcTAEDajY-Kly18mbA" owningAssociation="_JkXl98TCEDajY-Kly18mbA" association="_JkXl98TCEDajY-Kly18mbA"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_JkXl8cTCEDajY-Kly18mbA0" source="genmymodel"> 
+      <details xmi:id="_JkXl8cTCEDajY-Kly18mbA00" key="uuid" value="_JkXl8cTCEDajY-Kly18mbA"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_JkXl8sTCEDajY-Kly18mbA"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_JkXl8sTCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_JkXl8sTCEDajY-Kly18mbA00" key="uuid" value="_JkXl8sTCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </lowerValue> 
+    <upperValue xsi:type="uml:LiteralInteger" xmi:id="_JkXl88TCEDajY-Kly18mbA" value="1"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_JkXl88TCEDajY-Kly18mbA0" source="genmymodel"> 
+       <details xmi:id="_JkXl88TCEDajY-Kly18mbA00" key="uuid" value="_JkXl88TCEDajY-Kly18mbA"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </upperValue> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Actor" xmi:id="_391FscTEEDajY-Kly18mbA" name="Der Automat"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_391FscTEEDajY-Kly18mbA0" source="genmymodel"> 
+     <details xmi:id="_391FscTEEDajY-Kly18mbA00" key="uuid" value="_391FscTEEDajY-Kly18mbA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+ </uml:Model> 
+</xmi:XMI>

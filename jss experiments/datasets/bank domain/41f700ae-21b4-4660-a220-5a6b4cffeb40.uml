@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"> 
+ <uml:Model xmi:id="41f700ae-21b4-4660-a220-5a6b4cffeb40" name="Singleton"> 
+  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+   <eAnnotations xmi:id="41f700ae-21b4-4660-a220-5a6b4cffeb400" source="genmymodel"> 
+    <details xmi:id="41f700ae-21b4-4660-a220-5a6b4cffeb4000" key="uuid" value="41f700ae-21b4-4660-a220-5a6b4cffeb40"></details> 
+    <details xmi:id="41f700ae-21b4-4660-a220-5a6b4cffeb4001" key="gmm-documentation" value="Singleton pattern guarantees that a class only has an unique instance and that a method returns this instance. The instantiation of the class is restricted to one object and the class is responsible for its instantiation.
+For example, the Singleton design pattern may be useful in a system where there should be only one window manager."></details> 
+   </eAnnotations> 
+  </xmi:Extension> 
+  <packageImport xmi:id="bc20a24d-3eea-4bcf-af74-99d87095ff83" importingNamespace="41f700ae-21b4-4660-a220-5a6b4cffeb40"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="bc20a24d-3eea-4bcf-af74-99d87095ff830" source="genmymodel"> 
+     <details xmi:id="bc20a24d-3eea-4bcf-af74-99d87095ff8300" key="uuid" value="bc20a24d-3eea-4bcf-af74-99d87095ff83"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#/" /> 
+  </packageImport> 
+  <packageImport xmi:id="9f92d1ec-98e7-464d-8518-a5ea5f3ec5f1" importingNamespace="41f700ae-21b4-4660-a220-5a6b4cffeb40"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="9f92d1ec-98e7-464d-8518-a5ea5f3ec5f10" source="genmymodel"> 
+     <details xmi:id="9f92d1ec-98e7-464d-8518-a5ea5f3ec5f100" key="uuid" value="9f92d1ec-98e7-464d-8518-a5ea5f3ec5f1"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#/" /> 
+  </packageImport> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_YkFaoFdNEDCGTb6ZuLm3Mw" name="Singleton"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_YkFaoFdNEDCGTb6ZuLm3Mw0" source="genmymodel"> 
+     <details xmi:id="_YkFaoFdNEDCGTb6ZuLm3Mw00" key="uuid" value="_YkFaoFdNEDCGTb6ZuLm3Mw"></details> 
+     <details xmi:id="_YkFaoFdNEDCGTb6ZuLm3Mw01" key="gmm-documentation" value=""></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedAttribute xmi:id="_Zn0IgFdNEDCGTb6ZuLm3Mw" name="instance" visibility="private" isLeaf="true" isStatic="true" type="_YkFaoFdNEDCGTb6ZuLm3Mw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_Zn0IgFdNEDCGTb6ZuLm3Mw0" source="genmymodel"> 
+      <details xmi:id="_Zn0IgFdNEDCGTb6ZuLm3Mw00" key="uuid" value="_Zn0IgFdNEDCGTb6ZuLm3Mw"></details> 
+      <details xmi:id="_Zn0IgFdNEDCGTb6ZuLm3Mw01" key="gmm-documentation" value=""></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedAttribute> 
+   <ownedOperation xmi:id="_cnYQ8FdNEDCGTb6ZuLm3Mw" name="getInstance" isStatic="true" class="_YkFaoFdNEDCGTb6ZuLm3Mw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_cnYQ8FdNEDCGTb6ZuLm3Mw0" source="genmymodel"> 
+      <details xmi:id="_cnYQ8FdNEDCGTb6ZuLm3Mw00" key="uuid" value="_cnYQ8FdNEDCGTb6ZuLm3Mw"></details> 
+      <details xmi:id="_cnYQ8FdNEDCGTb6ZuLm3Mw01" key="gmm-documentation" value=""></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="5dee08a9-da28-407d-8017-d016109237c4" type="_YkFaoFdNEDCGTb6ZuLm3Mw" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="5dee08a9-da28-407d-8017-d016109237c40" source="genmymodel"> 
+       <details xmi:id="5dee08a9-da28-407d-8017-d016109237c400" key="uuid" value="5dee08a9-da28-407d-8017-d016109237c4"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </ownedParameter> 
+   </ownedOperation> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_jRltUajNEDSXFOKe8rgQUQ" name="car"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_jRltUajNEDSXFOKe8rgQUQ0" source="genmymodel"> 
+     <details xmi:id="_jRltUajNEDSXFOKe8rgQUQ00" key="uuid" value="_jRltUajNEDSXFOKe8rgQUQ"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_kLkpUKjNEDSXFOKe8rgQUQ" name="bank"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_kLkpUKjNEDSXFOKe8rgQUQ0" source="genmymodel"> 
+     <details xmi:id="_kLkpUKjNEDSXFOKe8rgQUQ00" key="uuid" value="_kLkpUKjNEDSXFOKe8rgQUQ"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_mLt8IqjNEDSXFOKe8rgQUQ" name="bank_car" memberEnd="_mLt8IKjNEDSXFOKe8rgQUQ _mLt8IajNEDSXFOKe8rgQUQ" navigableOwnedEnd="_mLt8IKjNEDSXFOKe8rgQUQ _mLt8IajNEDSXFOKe8rgQUQ"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_mLt8IqjNEDSXFOKe8rgQUQ0" source="genmymodel"> 
+     <details xmi:id="_mLt8IqjNEDSXFOKe8rgQUQ00" key="uuid" value="_mLt8IqjNEDSXFOKe8rgQUQ"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_mLt8IKjNEDSXFOKe8rgQUQ" name="car" type="_jRltUajNEDSXFOKe8rgQUQ" owningAssociation="_mLt8IqjNEDSXFOKe8rgQUQ" association="_mLt8IqjNEDSXFOKe8rgQUQ"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_mLt8IKjNEDSXFOKe8rgQUQ0" source="genmymodel"> 
+      <details xmi:id="_mLt8IKjNEDSXFOKe8rgQUQ00" key="uuid" value="_mLt8IKjNEDSXFOKe8rgQUQ"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_mLt8IKjNEDSXFOKe8rgQUQ1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_mLt8IKjNEDSXFOKe8rgQUQ2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_mLt8IajNEDSXFOKe8rgQUQ" name="bank" type="_kLkpUKjNEDSXFOKe8rgQUQ" owningAssociation="_mLt8IqjNEDSXFOKe8rgQUQ" association="_mLt8IqjNEDSXFOKe8rgQUQ"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_mLt8IajNEDSXFOKe8rgQUQ0" source="genmymodel"> 
+      <details xmi:id="_mLt8IajNEDSXFOKe8rgQUQ00" key="uuid" value="_mLt8IajNEDSXFOKe8rgQUQ"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_mLt8IajNEDSXFOKe8rgQUQ1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_mLt8IajNEDSXFOKe8rgQUQ2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Interaction" xmi:id="_xLMsAKjOEDSXFOKe8rgQUQ" name="Interaction"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_xLMsAKjOEDSXFOKe8rgQUQ0" source="genmymodel"> 
+     <details xmi:id="_xLMsAKjOEDSXFOKe8rgQUQ00" key="uuid" value="_xLMsAKjOEDSXFOKe8rgQUQ"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <lifeline xmi:id="_zMt30KjOEDSXFOKe8rgQUQ" name="lifeline" interaction="_xLMsAKjOEDSXFOKe8rgQUQ"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_zMt30KjOEDSXFOKe8rgQUQ0" source="genmymodel"> 
+      <details xmi:id="_zMt30KjOEDSXFOKe8rgQUQ00" key="uuid" value="_zMt30KjOEDSXFOKe8rgQUQ"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </lifeline> 
+   <lifeline xmi:id="_zmseEKjOEDSXFOKe8rgQUQ" name="lifeline2" interaction="_xLMsAKjOEDSXFOKe8rgQUQ"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_zmseEKjOEDSXFOKe8rgQUQ0" source="genmymodel"> 
+      <details xmi:id="_zmseEKjOEDSXFOKe8rgQUQ00" key="uuid" value="_zmseEKjOEDSXFOKe8rgQUQ"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </lifeline> 
+   <lifeline xmi:id="_0CWfUKjOEDSXFOKe8rgQUQ" name="lifeline3" interaction="_xLMsAKjOEDSXFOKe8rgQUQ"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_0CWfUKjOEDSXFOKe8rgQUQ0" source="genmymodel"> 
+      <details xmi:id="_0CWfUKjOEDSXFOKe8rgQUQ00" key="uuid" value="_0CWfUKjOEDSXFOKe8rgQUQ"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </lifeline> 
+  </packagedElement> 
+ </uml:Model> 
+</xmi:XMI>

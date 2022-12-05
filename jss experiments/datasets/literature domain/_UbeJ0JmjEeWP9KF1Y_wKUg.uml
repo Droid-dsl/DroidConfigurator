@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"> 
+ <uml:Model xmi:id="_UbeJ0JmjEeWP9KF1Y_wKUg" name="model"> 
+  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+   <eAnnotations xmi:id="_UbeJ0JmjEeWP9KF1Y_wKUg0" source="genmymodel"> 
+    <details xmi:id="_UbeJ0JmjEeWP9KF1Y_wKUg00" key="uuid" value="_UbeJ0JmjEeWP9KF1Y_wKUg"></details> 
+   </eAnnotations> 
+  </xmi:Extension> 
+  <packageImport xmi:id="_Ubew4JmjEeWP9KF1Y_wKUg" importingNamespace="_UbeJ0JmjEeWP9KF1Y_wKUg"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_Ubew4JmjEeWP9KF1Y_wKUg0" source="genmymodel"> 
+     <details xmi:id="_Ubew4JmjEeWP9KF1Y_wKUg00" key="uuid" value="_Ubew4JmjEeWP9KF1Y_wKUg"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#/" /> 
+  </packageImport> 
+  <packageImport xmi:id="_Ubew4ZmjEeWP9KF1Y_wKUg" importingNamespace="_UbeJ0JmjEeWP9KF1Y_wKUg"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_Ubew4ZmjEeWP9KF1Y_wKUg0" source="genmymodel"> 
+     <details xmi:id="_Ubew4ZmjEeWP9KF1Y_wKUg00" key="uuid" value="_Ubew4ZmjEeWP9KF1Y_wKUg"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#/" /> 
+  </packageImport> 
+  <packagedElement xsi:type="uml:Actor" xmi:id="_q7xQMHvREDOXlr464N2s7Q" name="Question Author"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_q7xQMHvREDOXlr464N2s7Q0" source="genmymodel"> 
+     <details xmi:id="_q7xQMHvREDOXlr464N2s7Q00" key="uuid" value="_q7xQMHvREDOXlr464N2s7Q"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_uFW3UHvREDOXlr464N2s7Q" name="Edit Question"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_uFW3UHvREDOXlr464N2s7Q0" source="genmymodel"> 
+     <details xmi:id="_uFW3UHvREDOXlr464N2s7Q00" key="uuid" value="_uFW3UHvREDOXlr464N2s7Q"></details> 
+     <details xmi:id="_uFW3UHvREDOXlr464N2s7Q01" key="gmm-documentation" value="&amp;nbsp;<br><ol><li>Question Author enters unique question id</li><li>Question Author modifies version, description <br></li><li>Question Author modifies question text.</li><li>Question Author modifies answers including answer tag, data edits, positions <br></li><li>Question Author saves results for later completion or indicates completion.<br></li></ol>"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <extensionPoint xmi:id="_3sD2YHvSEDOXlr464N2s7Q" name="No Question Found" useCase="_uFW3UHvREDOXlr464N2s7Q"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_3sD2YHvSEDOXlr464N2s7Q0" source="genmymodel"> 
+      <details xmi:id="_3sD2YHvSEDOXlr464N2s7Q00" key="uuid" value="_3sD2YHvSEDOXlr464N2s7Q"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </extensionPoint> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_2K8eYHvREDOXlr464N2s7Q" name="Question Author_Create Question" memberEnd="_2K1wsHvREDOXlr464N2s7Q _2K6CIHvREDOXlr464N2s7Q" navigableOwnedEnd="_2K1wsHvREDOXlr464N2s7Q _2K6CIHvREDOXlr464N2s7Q"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_2K8eYHvREDOXlr464N2s7Q0" source="genmymodel"> 
+     <details xmi:id="_2K8eYHvREDOXlr464N2s7Q00" key="uuid" value="_2K8eYHvREDOXlr464N2s7Q"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_2K1wsHvREDOXlr464N2s7Q" name="create Question" type="_uFW3UHvREDOXlr464N2s7Q" owningAssociation="_2K8eYHvREDOXlr464N2s7Q" association="_2K8eYHvREDOXlr464N2s7Q"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_2K1wsHvREDOXlr464N2s7Q0" source="genmymodel"> 
+      <details xmi:id="_2K1wsHvREDOXlr464N2s7Q00" key="uuid" value="_2K1wsHvREDOXlr464N2s7Q"></details> 
+      <details xmi:id="_2K1wsHvREDOXlr464N2s7Q01" key="gmm-documentation" value="<br>"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_2K1wsHvREDOXlr464N2s7Q1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_2K1wsHvREDOXlr464N2s7Q2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_2K6CIHvREDOXlr464N2s7Q" name="question Author" type="_q7xQMHvREDOXlr464N2s7Q" owningAssociation="_2K8eYHvREDOXlr464N2s7Q" association="_2K8eYHvREDOXlr464N2s7Q"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_2K6CIHvREDOXlr464N2s7Q0" source="genmymodel"> 
+      <details xmi:id="_2K6CIHvREDOXlr464N2s7Q00" key="uuid" value="_2K6CIHvREDOXlr464N2s7Q"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_2K6CIHvREDOXlr464N2s7Q1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_2K6CIHvREDOXlr464N2s7Q2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_zQx94HvSEDOXlr464N2s7Q" name="New Question"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_zQx94HvSEDOXlr464N2s7Q0" source="genmymodel"> 
+     <details xmi:id="_zQx94HvSEDOXlr464N2s7Q00" key="uuid" value="_zQx94HvSEDOXlr464N2s7Q"></details> 
+     <details xmi:id="_zQx94HvSEDOXlr464N2s7Q01" key="gmm-documentation" value="Starting at entry of question identifier When question identifier does not exist set up blank template for new question<br>"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <extend xmi:id="_3sDPUHvSEDOXlr464N2s7Q" extendedCase="_uFW3UHvREDOXlr464N2s7Q" extensionLocation="_3sD2YHvSEDOXlr464N2s7Q" extension="_zQx94HvSEDOXlr464N2s7Q"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_3sDPUHvSEDOXlr464N2s7Q0" source="genmymodel"> 
+      <details xmi:id="_3sDPUHvSEDOXlr464N2s7Q00" key="uuid" value="_3sDPUHvSEDOXlr464N2s7Q"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </extend> 
+  </packagedElement> 
+ </uml:Model> 
+</xmi:XMI>

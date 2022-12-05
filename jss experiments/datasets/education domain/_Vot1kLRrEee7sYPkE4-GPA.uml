@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"> 
+ <uml:Model xmi:id="_Vot1kLRrEee7sYPkE4-GPA" name="model"> 
+  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+   <eAnnotations xmi:id="_Vot1kLRrEee7sYPkE4-GPA0" source="genmymodel"> 
+    <details xmi:id="_Vot1kLRrEee7sYPkE4-GPA00" key="uuid" value="_Vot1kLRrEee7sYPkE4-GPA"></details> 
+    <details xmi:id="_Vot1kLRrEee7sYPkE4-GPA01" key="author" value="goguda"></details> 
+   </eAnnotations> 
+  </xmi:Extension> 
+  <packageImport xmi:id="_VoucoLRrEee7sYPkE4-GPA" importingNamespace="_Vot1kLRrEee7sYPkE4-GPA"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_VoucoLRrEee7sYPkE4-GPA0" source="genmymodel"> 
+     <details xmi:id="_VoucoLRrEee7sYPkE4-GPA00" key="uuid" value="_VoucoLRrEee7sYPkE4-GPA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#/" /> 
+  </packageImport> 
+  <packagedElement xsi:type="uml:Actor" xmi:id="_erLd0JaZEDWig4ZLoJNfSw" name="Student"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_erLd0JaZEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_erLd0JaZEDWig4ZLoJNfSw00" key="uuid" value="_erLd0JaZEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Actor" xmi:id="_ffXT0JaZEDWig4ZLoJNfSw" name="Professor"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_ffXT0JaZEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_ffXT0JaZEDWig4ZLoJNfSw00" key="uuid" value="_ffXT0JaZEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_ljSlIJaZEDWig4ZLoJNfSw" name="Professor_Student" memberEnd="_ljRXAJaZEDWig4ZLoJNfSw _ljR-EJaZEDWig4ZLoJNfSw" navigableOwnedEnd="_ljRXAJaZEDWig4ZLoJNfSw _ljR-EJaZEDWig4ZLoJNfSw"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_ljSlIJaZEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_ljSlIJaZEDWig4ZLoJNfSw00" key="uuid" value="_ljSlIJaZEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_ljRXAJaZEDWig4ZLoJNfSw" name="student" type="_erLd0JaZEDWig4ZLoJNfSw" owningAssociation="_ljSlIJaZEDWig4ZLoJNfSw" association="_ljSlIJaZEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_ljRXAJaZEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_ljRXAJaZEDWig4ZLoJNfSw00" key="uuid" value="_ljRXAJaZEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_ljRXAJaZEDWig4ZLoJNfSw1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_ljRXAJaZEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_ljR-EJaZEDWig4ZLoJNfSw" name="professor" type="_ffXT0JaZEDWig4ZLoJNfSw" owningAssociation="_ljSlIJaZEDWig4ZLoJNfSw" association="_ljSlIJaZEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_ljR-EJaZEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_ljR-EJaZEDWig4ZLoJNfSw00" key="uuid" value="_ljR-EJaZEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_ljR-EJaZEDWig4ZLoJNfSw1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_ljR-EJaZEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_3yHGAJaZEDWig4ZLoJNfSw" name="Makes course(s) visible on system and adds questions"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_3yHGAJaZEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_3yHGAJaZEDWig4ZLoJNfSw00" key="uuid" value="_3yHGAJaZEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_9buZ4ZaZEDWig4ZLoJNfSw" name="Professor_Make course visible on system" memberEnd="_9bty0JaZEDWig4ZLoJNfSw _9buZ4JaZEDWig4ZLoJNfSw" navigableOwnedEnd="_9bty0JaZEDWig4ZLoJNfSw _9buZ4JaZEDWig4ZLoJNfSw"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_9buZ4ZaZEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_9buZ4ZaZEDWig4ZLoJNfSw00" key="uuid" value="_9buZ4ZaZEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_9bty0JaZEDWig4ZLoJNfSw" name="make course visible on system" type="_3yHGAJaZEDWig4ZLoJNfSw" owningAssociation="_9buZ4ZaZEDWig4ZLoJNfSw" association="_9buZ4ZaZEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_9bty0JaZEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_9bty0JaZEDWig4ZLoJNfSw00" key="uuid" value="_9bty0JaZEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_9bty0JaZEDWig4ZLoJNfSw1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_9bty0JaZEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_9buZ4JaZEDWig4ZLoJNfSw" name="professor" type="_ffXT0JaZEDWig4ZLoJNfSw" owningAssociation="_9buZ4ZaZEDWig4ZLoJNfSw" association="_9buZ4ZaZEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_9buZ4JaZEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_9buZ4JaZEDWig4ZLoJNfSw00" key="uuid" value="_9buZ4JaZEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_9buZ4JaZEDWig4ZLoJNfSw1" value="1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_9buZ4JaZEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_Def0oJaaEDWig4ZLoJNfSw" name="Student joins course(s)"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_Def0oJaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_Def0oJaaEDWig4ZLoJNfSw00" key="uuid" value="_Def0oJaaEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_IAXdUJaaEDWig4ZLoJNfSw" name="Student joins course_Make course visible on system" memberEnd="_IAW2QJaaEDWig4ZLoJNfSw _IAW2QZaaEDWig4ZLoJNfSw" navigableOwnedEnd="_IAW2QJaaEDWig4ZLoJNfSw _IAW2QZaaEDWig4ZLoJNfSw"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_IAXdUJaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_IAXdUJaaEDWig4ZLoJNfSw00" key="uuid" value="_IAXdUJaaEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_IAW2QJaaEDWig4ZLoJNfSw" name="make course visible on system" type="_3yHGAJaZEDWig4ZLoJNfSw" owningAssociation="_IAXdUJaaEDWig4ZLoJNfSw" association="_IAXdUJaaEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_IAW2QJaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_IAW2QJaaEDWig4ZLoJNfSw00" key="uuid" value="_IAW2QJaaEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_IAW2QJaaEDWig4ZLoJNfSw1" value="1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_IAW2QJaaEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_IAW2QZaaEDWig4ZLoJNfSw" name="student joins course" type="_Def0oJaaEDWig4ZLoJNfSw" owningAssociation="_IAXdUJaaEDWig4ZLoJNfSw" association="_IAXdUJaaEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_IAW2QZaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_IAW2QZaaEDWig4ZLoJNfSw00" key="uuid" value="_IAW2QZaaEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_IAW2QZaaEDWig4ZLoJNfSw1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_IAW2QZaaEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_KIEJopaaEDWig4ZLoJNfSw" name="Student_Student joins course(s)" memberEnd="_KIEJoJaaEDWig4ZLoJNfSw _KIEJoZaaEDWig4ZLoJNfSw" navigableOwnedEnd="_KIEJoJaaEDWig4ZLoJNfSw _KIEJoZaaEDWig4ZLoJNfSw"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_KIEJopaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_KIEJopaaEDWig4ZLoJNfSw00" key="uuid" value="_KIEJopaaEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_KIEJoJaaEDWig4ZLoJNfSw" name="student joins course(s)" type="_Def0oJaaEDWig4ZLoJNfSw" owningAssociation="_KIEJopaaEDWig4ZLoJNfSw" association="_KIEJopaaEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_KIEJoJaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_KIEJoJaaEDWig4ZLoJNfSw00" key="uuid" value="_KIEJoJaaEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_KIEJoJaaEDWig4ZLoJNfSw1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_KIEJoJaaEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_KIEJoZaaEDWig4ZLoJNfSw" name="student" type="_erLd0JaZEDWig4ZLoJNfSw" owningAssociation="_KIEJopaaEDWig4ZLoJNfSw" association="_KIEJopaaEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_KIEJoZaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_KIEJoZaaEDWig4ZLoJNfSw00" key="uuid" value="_KIEJoZaaEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_KIEJoZaaEDWig4ZLoJNfSw1" value="1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_KIEJoZaaEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_Sn1LQJaaEDWig4ZLoJNfSw" name="Student starts answering questions"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_Sn1LQJaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_Sn1LQJaaEDWig4ZLoJNfSw00" key="uuid" value="_Sn1LQJaaEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_cvCEwZaaEDWig4ZLoJNfSw" name="Student signs on and answers questions_Student joins course(s)" memberEnd="_cvBdsJaaEDWig4ZLoJNfSw _cvCEwJaaEDWig4ZLoJNfSw" navigableOwnedEnd="_cvBdsJaaEDWig4ZLoJNfSw _cvCEwJaaEDWig4ZLoJNfSw"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_cvCEwZaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_cvCEwZaaEDWig4ZLoJNfSw00" key="uuid" value="_cvCEwZaaEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_cvBdsJaaEDWig4ZLoJNfSw" name="student joins course(s)" type="_Def0oJaaEDWig4ZLoJNfSw" owningAssociation="_cvCEwZaaEDWig4ZLoJNfSw" association="_cvCEwZaaEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_cvBdsJaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_cvBdsJaaEDWig4ZLoJNfSw00" key="uuid" value="_cvBdsJaaEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_cvBdsJaaEDWig4ZLoJNfSw1" value="1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_cvBdsJaaEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_cvCEwJaaEDWig4ZLoJNfSw" name="student signs on and answers questions" type="_Sn1LQJaaEDWig4ZLoJNfSw" owningAssociation="_cvCEwZaaEDWig4ZLoJNfSw" association="_cvCEwZaaEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_cvCEwJaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_cvCEwJaaEDWig4ZLoJNfSw00" key="uuid" value="_cvCEwJaaEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_cvCEwJaaEDWig4ZLoJNfSw1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_cvCEwJaaEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_xBppYJaaEDWig4ZLoJNfSw" name="Student answers normal questions"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_xBppYJaaEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_xBppYJaaEDWig4ZLoJNfSw00" key="uuid" value="_xBppYJaaEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <generalization xmi:id="_HcZ_MJabEDWig4ZLoJNfSw" general="_Sn1LQJaaEDWig4ZLoJNfSw" specific="_xBppYJaaEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_HcZ_MJabEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_HcZ_MJabEDWig4ZLoJNfSw00" key="uuid" value="_HcZ_MJabEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </generalization> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_FC3U8JabEDWig4ZLoJNfSw" name="Student participates in tournaments"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_FC3U8JabEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_FC3U8JabEDWig4ZLoJNfSw00" key="uuid" value="_FC3U8JabEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <generalization xmi:id="_H4oBIJabEDWig4ZLoJNfSw" general="_Sn1LQJaaEDWig4ZLoJNfSw" specific="_FC3U8JabEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_H4oBIJabEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_H4oBIJabEDWig4ZLoJNfSw00" key="uuid" value="_H4oBIJabEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </generalization> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_NYQ5oJabEDWig4ZLoJNfSw" name="Student checks grades"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_NYQ5oJabEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_NYQ5oJabEDWig4ZLoJNfSw00" key="uuid" value="_NYQ5oJabEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_QipyAJabEDWig4ZLoJNfSw" name="Checks attendance grade"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_QipyAJabEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_QipyAJabEDWig4ZLoJNfSw00" key="uuid" value="_QipyAJabEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <generalization xmi:id="_UMFW0JabEDWig4ZLoJNfSw" general="_NYQ5oJabEDWig4ZLoJNfSw" specific="_QipyAJabEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_UMFW0JabEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_UMFW0JabEDWig4ZLoJNfSw00" key="uuid" value="_UMFW0JabEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </generalization> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:UseCase" xmi:id="_RvIMMJabEDWig4ZLoJNfSw" name="Checks correctness grade"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_RvIMMJabEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_RvIMMJabEDWig4ZLoJNfSw00" key="uuid" value="_RvIMMJabEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <generalization xmi:id="_UoUm4JabEDWig4ZLoJNfSw" general="_NYQ5oJabEDWig4ZLoJNfSw" specific="_RvIMMJabEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_UoUm4JabEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_UoUm4JabEDWig4ZLoJNfSw00" key="uuid" value="_UoUm4JabEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </generalization> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_VXJbwZabEDWig4ZLoJNfSw" name="Student joins course(s)_Student checks grades" memberEnd="_VXI0sJabEDWig4ZLoJNfSw _VXJbwJabEDWig4ZLoJNfSw" navigableOwnedEnd="_VXI0sJabEDWig4ZLoJNfSw _VXJbwJabEDWig4ZLoJNfSw"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_VXJbwZabEDWig4ZLoJNfSw0" source="genmymodel"> 
+     <details xmi:id="_VXJbwZabEDWig4ZLoJNfSw00" key="uuid" value="_VXJbwZabEDWig4ZLoJNfSw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_VXI0sJabEDWig4ZLoJNfSw" name="student checks grades" type="_NYQ5oJabEDWig4ZLoJNfSw" owningAssociation="_VXJbwZabEDWig4ZLoJNfSw" association="_VXJbwZabEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_VXI0sJabEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_VXI0sJabEDWig4ZLoJNfSw00" key="uuid" value="_VXI0sJabEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_VXI0sJabEDWig4ZLoJNfSw1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_VXI0sJabEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_VXJbwJabEDWig4ZLoJNfSw" name="student joins course(s)" type="_Def0oJaaEDWig4ZLoJNfSw" owningAssociation="_VXJbwZabEDWig4ZLoJNfSw" association="_VXJbwZabEDWig4ZLoJNfSw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_VXJbwJabEDWig4ZLoJNfSw0" source="genmymodel"> 
+      <details xmi:id="_VXJbwJabEDWig4ZLoJNfSw00" key="uuid" value="_VXJbwJabEDWig4ZLoJNfSw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_VXJbwJabEDWig4ZLoJNfSw1" value="1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_VXJbwJabEDWig4ZLoJNfSw2" value="*" /> 
+   </ownedEnd> 
+  </packagedElement> 
+ </uml:Model> 
+</xmi:XMI>

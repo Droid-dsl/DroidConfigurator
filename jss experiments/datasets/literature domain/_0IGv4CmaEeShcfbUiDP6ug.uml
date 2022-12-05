@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"> 
+ <uml:Model xmi:id="_0IGv4CmaEeShcfbUiDP6ug" name="model"> 
+  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+   <eAnnotations xmi:id="_0IGv4CmaEeShcfbUiDP6ug0" source="genmymodel"> 
+    <details xmi:id="_0IGv4CmaEeShcfbUiDP6ug00" key="uuid" value="_0IGv4CmaEeShcfbUiDP6ug"></details> 
+    <details xmi:id="_0IGv4CmaEeShcfbUiDP6ug01" key="gmm-documentation" value="<div>class Book{</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>String title;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>String author;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>int count;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span></div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>public Book(String title, String author) {</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>this.title=title;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>this.author=author;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>public Book() {</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span></div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>// TODO Auto-generated constructor stub</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>int increment(){</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span> count+=1;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>&amp;nbsp;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span> return count;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>int &amp;nbsp;decrement(){</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>return count-=1;<span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span></div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>}</div><div>}</div><div>class Library extends Book{</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span> Book[] books; &amp;nbsp;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>static int getCount(String title, Book[] books){</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>int count=0;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>Book bs =new Book();</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>for (int i = 0; i &amp;lt; books.length; i++) {</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>			</span>if(books[i].title==title){</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>			</span>count=bs.increment();</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>			</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>return count;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>static int getCount(Book book,Book[] books){</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>int count=0;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>Book bs =new Book();</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>for (int i = 0; i &amp;lt; books.length; i++) {</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>			</span>if (book.title==books[i].title){</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>				</span>count=bs.increment();</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>			</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>return count;<span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span></div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>static int getCount(Book[] books){</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>int count=0;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>Book bs =new Book();</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>for (int i = 0; i &amp;lt; books.length; i++) {</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>			</span>count=bs.increment();</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>return count;</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>}</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span></div><div>}</div><div>public class TestLibrary {</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>	</span>public static void main(String[] args) {</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span>Book bk1=new Book(&quot;Maths&quot;,&quot;RSA&quot;);</div><div><span class=&quot;Apple-tab-span&quot; style=&quot;white-space:pre&quot;>		</span> Book bk2=new Book(&quot;Science&quot;,&quot;SC&quot;);&amp;"></details> 
+   </eAnnotations> 
+  </xmi:Extension> 
+  <packageImport xmi:id="_0IGv4SmaEeShcfbUiDP6ug" importingNamespace="_0IGv4CmaEeShcfbUiDP6ug"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_0IGv4SmaEeShcfbUiDP6ug0" source="genmymodel"> 
+     <details xmi:id="_0IGv4SmaEeShcfbUiDP6ug00" key="uuid" value="_0IGv4SmaEeShcfbUiDP6ug"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#/" /> 
+  </packageImport> 
+  <packageImport xmi:id="_0IGv4imaEeShcfbUiDP6ug" importingNamespace="_0IGv4CmaEeShcfbUiDP6ug"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_0IGv4imaEeShcfbUiDP6ug0" source="genmymodel"> 
+     <details xmi:id="_0IGv4imaEeShcfbUiDP6ug00" key="uuid" value="_0IGv4imaEeShcfbUiDP6ug"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#/" /> 
+  </packageImport> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_KBlMQA2JEDKsg87HWyrE_w" name="Book"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_KBlMQA2JEDKsg87HWyrE_w0" source="genmymodel"> 
+     <details xmi:id="_KBlMQA2JEDKsg87HWyrE_w00" key="uuid" value="_KBlMQA2JEDKsg87HWyrE_w"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedAttribute xmi:id="_M_H7cA2JEDKsg87HWyrE_w" name=" title,author"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_M_H7cA2JEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_M_H7cA2JEDKsg87HWyrE_w00" key="uuid" value="_M_H7cA2JEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="_ZyIT4A2JEDKsg87HWyrE_w" name=" count"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_ZyIT4A2JEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_ZyIT4A2JEDKsg87HWyrE_w00" key="uuid" value="_ZyIT4A2JEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+   </ownedAttribute> 
+   <ownedOperation xmi:id="_mIPU8A2JEDKsg87HWyrE_w" name="increment" class="_KBlMQA2JEDKsg87HWyrE_w"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_mIPU8A2JEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_mIPU8A2JEDKsg87HWyrE_w00" key="uuid" value="_mIPU8A2JEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_mIOt4A2JEDKsg87HWyrE_w" name="returnParameter" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_mIOt4A2JEDKsg87HWyrE_w0" source="genmymodel"> 
+       <details xmi:id="_mIOt4A2JEDKsg87HWyrE_w00" key="uuid" value="_mIOt4A2JEDKsg87HWyrE_w"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+    </ownedParameter> 
+   </ownedOperation> 
+   <ownedOperation xmi:id="_q9Ye8Q2JEDKsg87HWyrE_w" name="decrement" class="_KBlMQA2JEDKsg87HWyrE_w"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_q9Ye8Q2JEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_q9Ye8Q2JEDKsg87HWyrE_w00" key="uuid" value="_q9Ye8Q2JEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_q9Ye8A2JEDKsg87HWyrE_w" name="returnParameter" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_q9Ye8A2JEDKsg87HWyrE_w0" source="genmymodel"> 
+       <details xmi:id="_q9Ye8A2JEDKsg87HWyrE_w00" key="uuid" value="_q9Ye8A2JEDKsg87HWyrE_w"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+    </ownedParameter> 
+   </ownedOperation> 
+   <ownedOperation xmi:id="_xOURgQ2JEDKsg87HWyrE_w" name="equals(Book poinnt)" class="_KBlMQA2JEDKsg87HWyrE_w"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_xOURgQ2JEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_xOURgQ2JEDKsg87HWyrE_w00" key="uuid" value="_xOURgQ2JEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_xOURgA2JEDKsg87HWyrE_w" name="returnParameter" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_xOURgA2JEDKsg87HWyrE_w0" source="genmymodel"> 
+       <details xmi:id="_xOURgA2JEDKsg87HWyrE_w00" key="uuid" value="_xOURgA2JEDKsg87HWyrE_w"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Boolean" /> 
+    </ownedParameter> 
+   </ownedOperation> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_QcKNkA2KEDKsg87HWyrE_w" name="Library"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_QcKNkA2KEDKsg87HWyrE_w0" source="genmymodel"> 
+     <details xmi:id="_QcKNkA2KEDKsg87HWyrE_w00" key="uuid" value="_QcKNkA2KEDKsg87HWyrE_w"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <generalization xmi:id="_xDzOIA2KEDKsg87HWyrE_w" general="_KBlMQA2JEDKsg87HWyrE_w" specific="_QcKNkA2KEDKsg87HWyrE_w"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_xDzOIA2KEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_xDzOIA2KEDKsg87HWyrE_w00" key="uuid" value="_xDzOIA2KEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </generalization> 
+   <ownedAttribute xmi:id="_ZN2FoA2KEDKsg87HWyrE_w" name="Book[] books"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_ZN2FoA2KEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_ZN2FoA2KEDKsg87HWyrE_w00" key="uuid" value="_ZN2FoA2KEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#//ByteArray" /> 
+   </ownedAttribute> 
+   <ownedOperation xmi:id="_gU0IUQ2KEDKsg87HWyrE_w" name="getCount(String title)" class="_QcKNkA2KEDKsg87HWyrE_w"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_gU0IUQ2KEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_gU0IUQ2KEDKsg87HWyrE_w00" key="uuid" value="_gU0IUQ2KEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_gU0IUA2KEDKsg87HWyrE_w" name="returnParameter" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_gU0IUA2KEDKsg87HWyrE_w0" source="genmymodel"> 
+       <details xmi:id="_gU0IUA2KEDKsg87HWyrE_w00" key="uuid" value="_gU0IUA2KEDKsg87HWyrE_w"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+    </ownedParameter> 
+   </ownedOperation> 
+   <ownedOperation xmi:id="_1mwb8Q2KEDKsg87HWyrE_w" name="getCount(Book book)" class="_QcKNkA2KEDKsg87HWyrE_w"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_1mwb8Q2KEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_1mwb8Q2KEDKsg87HWyrE_w00" key="uuid" value="_1mwb8Q2KEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_1mwb8A2KEDKsg87HWyrE_w" name="returnParameter" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_1mwb8A2KEDKsg87HWyrE_w0" source="genmymodel"> 
+       <details xmi:id="_1mwb8A2KEDKsg87HWyrE_w00" key="uuid" value="_1mwb8A2KEDKsg87HWyrE_w"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+    </ownedParameter> 
+   </ownedOperation> 
+   <ownedOperation xmi:id="_6q0ywQ2KEDKsg87HWyrE_w" name="getCount" class="_QcKNkA2KEDKsg87HWyrE_w"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_6q0ywQ2KEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_6q0ywQ2KEDKsg87HWyrE_w00" key="uuid" value="_6q0ywQ2KEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_6q0ywA2KEDKsg87HWyrE_w" name="returnParameter" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_6q0ywA2KEDKsg87HWyrE_w0" source="genmymodel"> 
+       <details xmi:id="_6q0ywA2KEDKsg87HWyrE_w00" key="uuid" value="_6q0ywA2KEDKsg87HWyrE_w"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+    </ownedParameter> 
+   </ownedOperation> 
+   <ownedOperation xmi:id="_Iaj5MA2LEDKsg87HWyrE_w" name="getDiffCount" class="_QcKNkA2KEDKsg87HWyrE_w"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_Iaj5MA2LEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_Iaj5MA2LEDKsg87HWyrE_w00" key="uuid" value="_Iaj5MA2LEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_Iag14A2LEDKsg87HWyrE_w" name="returnParameter" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_Iag14A2LEDKsg87HWyrE_w0" source="genmymodel"> 
+       <details xmi:id="_Iag14A2LEDKsg87HWyrE_w00" key="uuid" value="_Iag14A2LEDKsg87HWyrE_w"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+    </ownedParameter> 
+   </ownedOperation> 
+   <ownedOperation xmi:id="_OAUn0A2LEDKsg87HWyrE_w" name="Book[] addBook(Book newBook)" class="_QcKNkA2KEDKsg87HWyrE_w"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_OAUn0A2LEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_OAUn0A2LEDKsg87HWyrE_w00" key="uuid" value="_OAUn0A2LEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_OATZsA2LEDKsg87HWyrE_w" name="returnParameter" type="_KBlMQA2JEDKsg87HWyrE_w" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_OATZsA2LEDKsg87HWyrE_w0" source="genmymodel"> 
+       <details xmi:id="_OATZsA2LEDKsg87HWyrE_w00" key="uuid" value="_OATZsA2LEDKsg87HWyrE_w"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </ownedParameter> 
+   </ownedOperation> 
+   <ownedOperation xmi:id="_WJz3cA2LEDKsg87HWyrE_w" name="removeBook(Book book)" class="_QcKNkA2KEDKsg87HWyrE_w"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_WJz3cA2LEDKsg87HWyrE_w0" source="genmymodel"> 
+      <details xmi:id="_WJz3cA2LEDKsg87HWyrE_w00" key="uuid" value="_WJz3cA2LEDKsg87HWyrE_w"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_WJzQYA2LEDKsg87HWyrE_w" name="returnParameter" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_WJzQYA2LEDKsg87HWyrE_w0" source="genmymodel"> 
+       <details xmi:id="_WJzQYA2LEDKsg87HWyrE_w00" key="uuid" value="_WJzQYA2LEDKsg87HWyrE_w"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+    </ownedParameter> 
+   </ownedOperation> 
+  </packagedElement> 
+ </uml:Model> 
+</xmi:XMI>

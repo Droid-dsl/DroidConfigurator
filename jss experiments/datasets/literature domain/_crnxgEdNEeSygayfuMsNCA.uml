@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"> 
+ <uml:Model xmi:id="_crnxgEdNEeSygayfuMsNCA" name="Citation Formatting Library"> 
+  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+   <eAnnotations xmi:id="_crnxgEdNEeSygayfuMsNCA0" source="genmymodel"> 
+    <details xmi:id="_crnxgEdNEeSygayfuMsNCA00" key="uuid" value="_crnxgEdNEeSygayfuMsNCA"></details> 
+    <details xmi:id="_crnxgEdNEeSygayfuMsNCA01" key="gmm-documentation" value="This library allows for the representation and formatting of various publications and their bibliographic data.<div><br></div><div>Authors: Professor Jesse Tov and Daniel Russotto</div>"></details> 
+   </eAnnotations> 
+  </xmi:Extension> 
+  <packageImport xmi:id="_croYkEdNEeSygayfuMsNCA" importingNamespace="_crnxgEdNEeSygayfuMsNCA"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_croYkEdNEeSygayfuMsNCA0" source="genmymodel"> 
+     <details xmi:id="_croYkEdNEeSygayfuMsNCA00" key="uuid" value="_croYkEdNEeSygayfuMsNCA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#/" /> 
+  </packageImport> 
+  <packageImport xmi:id="_croYkUdNEeSygayfuMsNCA" importingNamespace="_crnxgEdNEeSygayfuMsNCA"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_croYkUdNEeSygayfuMsNCA0" source="genmymodel"> 
+     <details xmi:id="_croYkUdNEeSygayfuMsNCA00" key="uuid" value="_croYkUdNEeSygayfuMsNCA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="pathmap://GENMYMODEL_LIBRARIES/GenMyModelPrimitiveTypes.library.uml#/" /> 
+  </packageImport> 
+  <packagedElement xsi:type="uml:Interface" xmi:id="_wDEQkCl7EDKCA9fscYdYNw" name="IPublication"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_wDEQkCl7EDKCA9fscYdYNw0" source="genmymodel"> 
+     <details xmi:id="_wDEQkCl7EDKCA9fscYdYNw00" key="uuid" value="_wDEQkCl7EDKCA9fscYdYNw"></details> 
+     <details xmi:id="_wDEQkCl7EDKCA9fscYdYNw01" key="gmm-documentation" value="Specifies operations for formatting citations from bibliographic data."></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedOperation xmi:id="_ySPd4Cl7EDKCA9fscYdYNw" name="citeMla" interface="_wDEQkCl7EDKCA9fscYdYNw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_ySPd4Cl7EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_ySPd4Cl7EDKCA9fscYdYNw00" key="uuid" value="_ySPd4Cl7EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_ySPd4Cl7EDKCA9fscYdYNw01" key="gmm-documentation" value="To format a citation in MLA style. Returns the formatted citation."></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_ySO20Cl7EDKCA9fscYdYNw" name="returnParameter" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_ySO20Cl7EDKCA9fscYdYNw0" source="genmymodel"> 
+       <details xmi:id="_ySO20Cl7EDKCA9fscYdYNw00" key="uuid" value="_ySO20Cl7EDKCA9fscYdYNw"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+    </ownedParameter> 
+   </ownedOperation> 
+   <ownedOperation xmi:id="_FmHiUCl8EDKCA9fscYdYNw" name="citeApa" interface="_wDEQkCl7EDKCA9fscYdYNw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_FmHiUCl8EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_FmHiUCl8EDKCA9fscYdYNw00" key="uuid" value="_FmHiUCl8EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_FmHiUCl8EDKCA9fscYdYNw01" key="gmm-documentation" value="To format a citation in APA style. Returns the formatted citation."></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedParameter xmi:id="_FmG7QCl8EDKCA9fscYdYNw" name="returnParameter" isUnique="false" direction="return"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_FmG7QCl8EDKCA9fscYdYNw0" source="genmymodel"> 
+       <details xmi:id="_FmG7QCl8EDKCA9fscYdYNw00" key="uuid" value="_FmG7QCl8EDKCA9fscYdYNw"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+    </ownedParameter> 
+   </ownedOperation> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_P_-5ICl8EDKCA9fscYdYNw" name="Book"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_P_-5ICl8EDKCA9fscYdYNw0" source="genmymodel"> 
+     <details xmi:id="_P_-5ICl8EDKCA9fscYdYNw00" key="uuid" value="_P_-5ICl8EDKCA9fscYdYNw"></details> 
+     <details xmi:id="_P_-5ICl8EDKCA9fscYdYNw01" key="gmm-documentation" value="Represents bibliographic information for books"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedAttribute xmi:id="_SAR88Cl8EDKCA9fscYdYNw" name="title" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_SAR88Cl8EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_SAR88Cl8EDKCA9fscYdYNw00" key="uuid" value="_SAR88Cl8EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_SAR88Cl8EDKCA9fscYdYNw01" key="gmm-documentation" value="The title of the book."></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="_X6n0cCl8EDKCA9fscYdYNw" name="author" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_X6n0cCl8EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_X6n0cCl8EDKCA9fscYdYNw00" key="uuid" value="_X6n0cCl8EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_X6n0cCl8EDKCA9fscYdYNw01" key="gmm-documentation" value="The author of the book."></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="_hxSXkCl8EDKCA9fscYdYNw" name="publisher" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_hxSXkCl8EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_hxSXkCl8EDKCA9fscYdYNw00" key="uuid" value="_hxSXkCl8EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_hxSXkCl8EDKCA9fscYdYNw01" key="gmm-documentation" value="The publisher of the book."></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="_mPH00Cl8EDKCA9fscYdYNw" name="location" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_mPH00Cl8EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_mPH00Cl8EDKCA9fscYdYNw00" key="uuid" value="_mPH00Cl8EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_mPH00Cl8EDKCA9fscYdYNw01" key="gmm-documentation" value="The location of the publication"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="_tWnb8Cl8EDKCA9fscYdYNw" name="year" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_tWnb8Cl8EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_tWnb8Cl8EDKCA9fscYdYNw00" key="uuid" value="_tWnb8Cl8EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_tWnb8Cl8EDKCA9fscYdYNw01" key="gmm-documentation" value="The year the book was published"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+   </ownedAttribute> 
+   <interfaceRealization xmi:id="_E_2XECl9EDKCA9fscYdYNw" client="_P_-5ICl8EDKCA9fscYdYNw" supplier="_wDEQkCl7EDKCA9fscYdYNw" contract="_wDEQkCl7EDKCA9fscYdYNw" implementingClassifier="_P_-5ICl8EDKCA9fscYdYNw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_E_2XECl9EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_E_2XECl9EDKCA9fscYdYNw00" key="uuid" value="_E_2XECl9EDKCA9fscYdYNw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </interfaceRealization> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_Pl5IsCl9EDKCA9fscYdYNw" name="Article"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_Pl5IsCl9EDKCA9fscYdYNw0" source="genmymodel"> 
+     <details xmi:id="_Pl5IsCl9EDKCA9fscYdYNw00" key="uuid" value="_Pl5IsCl9EDKCA9fscYdYNw"></details> 
+     <details xmi:id="_Pl5IsCl9EDKCA9fscYdYNw01" key="gmm-documentation" value="Represents bibliographic information for journal articles"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedAttribute xmi:id="_R3CE4Cl9EDKCA9fscYdYNw" name="title" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_R3CE4Cl9EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_R3CE4Cl9EDKCA9fscYdYNw00" key="uuid" value="_R3CE4Cl9EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_R3CE4Cl9EDKCA9fscYdYNw01" key="gmm-documentation" value="The title of the article"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="_m0yRMCl9EDKCA9fscYdYNw" name="author" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_m0yRMCl9EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_m0yRMCl9EDKCA9fscYdYNw00" key="uuid" value="_m0yRMCl9EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_m0yRMCl9EDKCA9fscYdYNw01" key="gmm-documentation" value="The author of the article"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="_xVdaoCl9EDKCA9fscYdYNw" name="journal" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_xVdaoCl9EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_xVdaoCl9EDKCA9fscYdYNw00" key="uuid" value="_xVdaoCl9EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_xVdaoCl9EDKCA9fscYdYNw01" key="gmm-documentation" value="The journal in which the article was published"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="_2vsOsCl9EDKCA9fscYdYNw" name="volume" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_2vsOsCl9EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_2vsOsCl9EDKCA9fscYdYNw00" key="uuid" value="_2vsOsCl9EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_2vsOsCl9EDKCA9fscYdYNw01" key="gmm-documentation" value="The volume of the journal"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="_6Md3kCl9EDKCA9fscYdYNw" name="issue" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_6Md3kCl9EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_6Md3kCl9EDKCA9fscYdYNw00" key="uuid" value="_6Md3kCl9EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_6Md3kCl9EDKCA9fscYdYNw01" key="gmm-documentation" value="The issue of the journal"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="__Wtu4Cl9EDKCA9fscYdYNw" name="year" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="__Wtu4Cl9EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="__Wtu4Cl9EDKCA9fscYdYNw00" key="uuid" value="__Wtu4Cl9EDKCA9fscYdYNw"></details> 
+      <details xmi:id="__Wtu4Cl9EDKCA9fscYdYNw01" key="gmm-documentation" value="The year the journal was published"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//Integer" /> 
+   </ownedAttribute> 
+   <interfaceRealization xmi:id="_QFUaMCl-EDKCA9fscYdYNw" client="_Pl5IsCl9EDKCA9fscYdYNw" supplier="_wDEQkCl7EDKCA9fscYdYNw" contract="_wDEQkCl7EDKCA9fscYdYNw" implementingClassifier="_Pl5IsCl9EDKCA9fscYdYNw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_QFUaMCl-EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_QFUaMCl-EDKCA9fscYdYNw00" key="uuid" value="_QFUaMCl-EDKCA9fscYdYNw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </interfaceRealization> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_dRdrYCl-EDKCA9fscYdYNw" name="Webpage"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_dRdrYCl-EDKCA9fscYdYNw0" source="genmymodel"> 
+     <details xmi:id="_dRdrYCl-EDKCA9fscYdYNw00" key="uuid" value="_dRdrYCl-EDKCA9fscYdYNw"></details> 
+     <details xmi:id="_dRdrYCl-EDKCA9fscYdYNw01" key="gmm-documentation" value="Represents bibliographic information for webpages"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedAttribute xmi:id="_rz1IoCl-EDKCA9fscYdYNw" name="title" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_rz1IoCl-EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_rz1IoCl-EDKCA9fscYdYNw00" key="uuid" value="_rz1IoCl-EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_rz1IoCl-EDKCA9fscYdYNw01" key="gmm-documentation" value="The title of the webpage"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="_6BEDYCl-EDKCA9fscYdYNw" name="author" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_6BEDYCl-EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_6BEDYCl-EDKCA9fscYdYNw00" key="uuid" value="_6BEDYCl-EDKCA9fscYdYNw"></details> 
+      <details xmi:id="_6BEDYCl-EDKCA9fscYdYNw01" key="gmm-documentation" value="The author of the webpage"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <ownedAttribute xmi:id="__IJ5ACl-EDKCA9fscYdYNw" name="url" visibility="private"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="__IJ5ACl-EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="__IJ5ACl-EDKCA9fscYdYNw00" key="uuid" value="__IJ5ACl-EDKCA9fscYdYNw"></details> 
+      <details xmi:id="__IJ5ACl-EDKCA9fscYdYNw01" key="gmm-documentation" value="The date that the webpage was accessed"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <type xsi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#//String" /> 
+   </ownedAttribute> 
+   <interfaceRealization xmi:id="_JQKDwCl_EDKCA9fscYdYNw" client="_dRdrYCl-EDKCA9fscYdYNw" supplier="_wDEQkCl7EDKCA9fscYdYNw" contract="_wDEQkCl7EDKCA9fscYdYNw" implementingClassifier="_dRdrYCl-EDKCA9fscYdYNw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_JQKDwCl_EDKCA9fscYdYNw0" source="genmymodel"> 
+      <details xmi:id="_JQKDwCl_EDKCA9fscYdYNw00" key="uuid" value="_JQKDwCl_EDKCA9fscYdYNw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </interfaceRealization> 
+  </packagedElement> 
+ </uml:Model> 
+</xmi:XMI>

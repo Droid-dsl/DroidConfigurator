@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"> 
+ <uml:Model xmi:id="_U7TaYLPFEee7sYPkE4-GPA" name="model"> 
+  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+   <eAnnotations xmi:id="_U7TaYLPFEee7sYPkE4-GPA0" source="genmymodel"> 
+    <details xmi:id="_U7TaYLPFEee7sYPkE4-GPA00" key="uuid" value="_U7TaYLPFEee7sYPkE4-GPA"></details> 
+    <details xmi:id="_U7TaYLPFEee7sYPkE4-GPA01" key="author" value="Alalya"></details> 
+    <details xmi:id="_U7TaYLPFEee7sYPkE4-GPA02" key="company" value="Middle East College"></details> 
+    <details xmi:id="_U7TaYLPFEee7sYPkE4-GPA03" key="gmm-documentation" value="<p>Name: Upload Medical Certificate</p>
+
+<p>Description: This use-case starts when a student upload a medical certificate (MC) against his/her absence via SIS. It handles all aspects of file upload (FTP) and it ends when the student get a confirmation message on browser against the Submission.</p>
+
+<p>Author(s): Putta</p>
+
+<p>Actor(s): Student.</p>
+
+<p>Location(s): MEC, Muscat.</p>
+
+<p>Status: Pathways defined.</p>
+
+<p>Priority: 1.</p>
+
+<p>Assumption(s):&amp;nbsp; Students are uploading valid Medical Certificates and can able to upload their MC from any client devices/browser before their session got expired in prescribed format. Students will upload their MC once they rejoin to MEC.</p>
+
+<p>Pre-condition(s):&amp;nbsp; Student has logged into the system.</p>
+
+<p>Post-condition(s):&amp;nbsp; Status message will be appeared on client&amp;rsquo;s browser and a mail notification goes to faculties concerned.</p>
+
+<p>Alternate Pathway(s):</p>
+
+<p>&amp;bull; Student can be able to submit their valid MC to concerned faculty manually.</p>
+
+<p>&amp;bull; Student can take the assistance of STL/support services assistance to upload the MC</p>
+
+<p>&amp;bull; Student can email a scanned copy of MC to faculty.</p>
+
+<p>Exception Pathway(s):</p>
+
+<p>&amp;bull; Student starts uploading the MC but session got expired before completion.</p>
+
+<p>&amp;bull; Student can upload the MC but format not accepted.</p>
+
+<p>&amp;bull; Browser dependent issue to complete the task.</p>
+
+<p>&amp;nbsp;</p>
+
+<p>Happy Path Flow of Events</p>
+
+<p>Use Case: Upload Medical Certificate</p>
+
+<p>Student can able to upload MC to SIS against their absence.</p>
+
+<p>1. Student logged to SIS</p>
+
+<p>2. For each attempt student</p>
+
+<p>&amp;nbsp;&amp;nbsp;&amp;nbsp; -Select the start date and end date</p>
+
+<p>&amp;nbsp;&amp;nbsp;&amp;nbsp; -Upload the Medical certificate.</p>
+
+<p>&amp;nbsp;&amp;nbsp;&amp;nbsp; -Receive the email notification for successful upload.</p>
+
+<p>&amp;nbsp;&amp;nbsp;&amp;nbsp; -Necessary updates in the repository for report generation.</p>
+
+<p>4. Notification mail sending to concerned faculty</p>
+"></details> 
+   </eAnnotations> 
+  </xmi:Extension> 
+  <packageImport xmi:id="_U7TaYbPFEee7sYPkE4-GPA" importingNamespace="_U7TaYLPFEee7sYPkE4-GPA"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_U7TaYbPFEee7sYPkE4-GPA0" source="genmymodel"> 
+     <details xmi:id="_U7TaYbPFEee7sYPkE4-GPA00" key="uuid" value="_U7TaYbPFEee7sYPkE4-GPA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#/" /> 
+  </packageImport> 
+  <packagedElement xsi:type="uml:Component" xmi:id="_JUO9YJX0EDWlCeBeZPmo4A" name="Medical Certificate System"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_JUO9YJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+     <details xmi:id="_JUO9YJX0EDWlCeBeZPmo4A00" key="uuid" value="_JUO9YJX0EDWlCeBeZPmo4A"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedUseCase xmi:id="_jx2rsJX0EDWlCeBeZPmo4A" name="Upload Medical Certificate"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_jx2rsJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_jx2rsJX0EDWlCeBeZPmo4A00" key="uuid" value="_jx2rsJX0EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_nX92wJX0EDWlCeBeZPmo4A" name="View/Download Medical Certificate"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_nX92wJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_nX92wJX0EDWlCeBeZPmo4A00" key="uuid" value="_nX92wJX0EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_saO2wJX0EDWlCeBeZPmo4A" name="Mark Attedance"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_saO2wJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_saO2wJX0EDWlCeBeZPmo4A00" key="uuid" value="_saO2wJX0EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <include xmi:id="_Bw-x4JX1EDWlCeBeZPmo4A" addition="_v-SMUJX0EDWlCeBeZPmo4A" includingCase="_saO2wJX0EDWlCeBeZPmo4A"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_Bw-x4JX1EDWlCeBeZPmo4A0" source="genmymodel"> 
+       <details xmi:id="_Bw-x4JX1EDWlCeBeZPmo4A00" key="uuid" value="_Bw-x4JX1EDWlCeBeZPmo4A"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </include> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_v-SMUJX0EDWlCeBeZPmo4A" name="Verify Medical Certificate"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_v-SMUJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_v-SMUJX0EDWlCeBeZPmo4A00" key="uuid" value="_v-SMUJX0EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_zDgQ0JX0EDWlCeBeZPmo4A" name="Generate Report"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_zDgQ0JX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_zDgQ0JX0EDWlCeBeZPmo4A00" key="uuid" value="_zDgQ0JX0EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Actor" xmi:id="_aJCXUJX0EDWlCeBeZPmo4A" name="Student"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_aJCXUJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+     <details xmi:id="_aJCXUJX0EDWlCeBeZPmo4A00" key="uuid" value="_aJCXUJX0EDWlCeBeZPmo4A"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Actor" xmi:id="_dEGaQJX0EDWlCeBeZPmo4A" name="Teacher"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_dEGaQJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+     <details xmi:id="_dEGaQJX0EDWlCeBeZPmo4A00" key="uuid" value="_dEGaQJX0EDWlCeBeZPmo4A"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Actor" xmi:id="_fGvncJX0EDWlCeBeZPmo4A" name="Register"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_fGvncJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+     <details xmi:id="_fGvncJX0EDWlCeBeZPmo4A00" key="uuid" value="_fGvncJX0EDWlCeBeZPmo4A"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="__4MrUJX0EDWlCeBeZPmo4A" name="Student_Upload Medical Certificate" memberEnd="__4LdMJX0EDWlCeBeZPmo4A __4MEQJX0EDWlCeBeZPmo4A" navigableOwnedEnd="__4LdMJX0EDWlCeBeZPmo4A __4MEQJX0EDWlCeBeZPmo4A"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="__4MrUJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+     <details xmi:id="__4MrUJX0EDWlCeBeZPmo4A00" key="uuid" value="__4MrUJX0EDWlCeBeZPmo4A"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="__4LdMJX0EDWlCeBeZPmo4A" name="upload Medical Certificate" type="_jx2rsJX0EDWlCeBeZPmo4A" owningAssociation="__4MrUJX0EDWlCeBeZPmo4A" association="__4MrUJX0EDWlCeBeZPmo4A"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="__4LdMJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="__4LdMJX0EDWlCeBeZPmo4A00" key="uuid" value="__4LdMJX0EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="__4LdMJX0EDWlCeBeZPmo4A1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="__4LdMJX0EDWlCeBeZPmo4A2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="__4MEQJX0EDWlCeBeZPmo4A" name="student" type="_aJCXUJX0EDWlCeBeZPmo4A" owningAssociation="__4MrUJX0EDWlCeBeZPmo4A" association="__4MrUJX0EDWlCeBeZPmo4A"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="__4MEQJX0EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="__4MEQJX0EDWlCeBeZPmo4A00" key="uuid" value="__4MEQJX0EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="__4MEQJX0EDWlCeBeZPmo4A1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="__4MEQJX0EDWlCeBeZPmo4A2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_AktzEZX1EDWlCeBeZPmo4A" name="Teacher_View/Download Medical Certificate" memberEnd="_Aksk8JX1EDWlCeBeZPmo4A _AktzEJX1EDWlCeBeZPmo4A" navigableOwnedEnd="_Aksk8JX1EDWlCeBeZPmo4A _AktzEJX1EDWlCeBeZPmo4A"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_AktzEZX1EDWlCeBeZPmo4A0" source="genmymodel"> 
+     <details xmi:id="_AktzEZX1EDWlCeBeZPmo4A00" key="uuid" value="_AktzEZX1EDWlCeBeZPmo4A"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_Aksk8JX1EDWlCeBeZPmo4A" name="view/Download Medical Certificate" type="_nX92wJX0EDWlCeBeZPmo4A" owningAssociation="_AktzEZX1EDWlCeBeZPmo4A" association="_AktzEZX1EDWlCeBeZPmo4A"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_Aksk8JX1EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_Aksk8JX1EDWlCeBeZPmo4A00" key="uuid" value="_Aksk8JX1EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Aksk8JX1EDWlCeBeZPmo4A1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Aksk8JX1EDWlCeBeZPmo4A2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_AktzEJX1EDWlCeBeZPmo4A" name="teacher" type="_dEGaQJX0EDWlCeBeZPmo4A" owningAssociation="_AktzEZX1EDWlCeBeZPmo4A" association="_AktzEZX1EDWlCeBeZPmo4A"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_AktzEJX1EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_AktzEJX1EDWlCeBeZPmo4A00" key="uuid" value="_AktzEJX1EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_AktzEJX1EDWlCeBeZPmo4A1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_AktzEJX1EDWlCeBeZPmo4A2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_BGTdMJX1EDWlCeBeZPmo4A" name="Teacher_Mark Attedance" memberEnd="_BGRoAJX1EDWlCeBeZPmo4A _BGS2IJX1EDWlCeBeZPmo4A" navigableOwnedEnd="_BGRoAJX1EDWlCeBeZPmo4A _BGS2IJX1EDWlCeBeZPmo4A"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_BGTdMJX1EDWlCeBeZPmo4A0" source="genmymodel"> 
+     <details xmi:id="_BGTdMJX1EDWlCeBeZPmo4A00" key="uuid" value="_BGTdMJX1EDWlCeBeZPmo4A"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_BGRoAJX1EDWlCeBeZPmo4A" name="mark Attedance" type="_saO2wJX0EDWlCeBeZPmo4A" owningAssociation="_BGTdMJX1EDWlCeBeZPmo4A" association="_BGTdMJX1EDWlCeBeZPmo4A"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_BGRoAJX1EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_BGRoAJX1EDWlCeBeZPmo4A00" key="uuid" value="_BGRoAJX1EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_BGRoAJX1EDWlCeBeZPmo4A1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_BGRoAJX1EDWlCeBeZPmo4A2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_BGS2IJX1EDWlCeBeZPmo4A" name="teacher" type="_dEGaQJX0EDWlCeBeZPmo4A" owningAssociation="_BGTdMJX1EDWlCeBeZPmo4A" association="_BGTdMJX1EDWlCeBeZPmo4A"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_BGS2IJX1EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_BGS2IJX1EDWlCeBeZPmo4A00" key="uuid" value="_BGS2IJX1EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_BGS2IJX1EDWlCeBeZPmo4A1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_BGS2IJX1EDWlCeBeZPmo4A2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_C9wuEJX1EDWlCeBeZPmo4A" name="Register_Generate Report" memberEnd="_C9vf8JX1EDWlCeBeZPmo4A _C9wHAJX1EDWlCeBeZPmo4A" navigableOwnedEnd="_C9vf8JX1EDWlCeBeZPmo4A _C9wHAJX1EDWlCeBeZPmo4A"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_C9wuEJX1EDWlCeBeZPmo4A0" source="genmymodel"> 
+     <details xmi:id="_C9wuEJX1EDWlCeBeZPmo4A00" key="uuid" value="_C9wuEJX1EDWlCeBeZPmo4A"></details> 
+     <details xmi:id="_C9wuEJX1EDWlCeBeZPmo4A01" key="gmm-documentation" value="<p>Name: Upload Medical Certificate</p>
+
+<p>Description: This use-case starts when a student upload a medical certificate (MC) against his/her absence via SIS. It handles all aspects of file upload (FTP) and it ends when the student get a confirmation message on browser against the Submission.</p>
+
+<p>Author(s): Putta</p>
+
+<p>Actor(s): Student.</p>
+
+<p>Location(s): MEC, Muscat.</p>
+
+<p>Status: Pathways defined.</p>
+
+<p>Priority: 1.</p>
+
+<p>Assumption(s):&amp;nbsp; Students are uploading valid Medical Certificates and can able to upload their MC from any client devices/browser before their session got expired in prescribed format. Students will upload their MC once they rejoin to MEC.</p>
+
+<p>Pre-condition(s):&amp;nbsp; Student has logged into the system.</p>
+
+<p>Post-condition(s):&amp;nbsp; Status message will be appeared on client&amp;rsquo;s browser and a mail notification goes to faculties concerned.</p>
+
+<p>Alternate Pathway(s):</p>
+
+<p>&amp;bull; Student can be able to submit their valid MC to concerned faculty manually.</p>
+
+<p>&amp;bull; Student can take the assistance of STL/support services assistance to upload the MC</p>
+
+<p>&amp;bull; Student can email a scanned copy of MC to faculty.</p>
+
+<p>Exception Pathway(s):</p>
+
+<p>&amp;bull; Student starts uploading the MC but session got expired before completion.</p>
+
+<p>&amp;bull; Student can upload the MC but format not accepted.</p>
+
+<p>&amp;bull; Browser dependent issue to complete the task.</p>
+
+<p>&amp;nbsp;</p>
+
+<p>Happy Path Flow of Events</p>
+
+<p>Use Case: Upload Medical Certificate</p>
+
+<p>Student can able to upload MC to SIS against their absence.</p>
+
+<p>1. Student logged to SIS</p>
+
+<p>2. For each attempt student</p>
+
+<p>&amp;nbsp;&amp;nbsp;&amp;nbsp; -Select the start date and end date</p>
+
+<p>&amp;nbsp;&amp;nbsp;&amp;nbsp; -Upload the Medical certificate.</p>
+
+<p>&amp;nbsp;&amp;nbsp;&amp;nbsp; -Receive the email notification for successful upload.</p>
+
+<p>&amp;nbsp;&amp;nbsp;&amp;nbsp; -Necessary updates in the repository for report generation.</p>
+
+<p>4. Notification mail sending to concerned faculty</p>
+
+<p>&amp;nbsp;</p>
+"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_C9vf8JX1EDWlCeBeZPmo4A" name="generate Report" type="_zDgQ0JX0EDWlCeBeZPmo4A" owningAssociation="_C9wuEJX1EDWlCeBeZPmo4A" association="_C9wuEJX1EDWlCeBeZPmo4A"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_C9vf8JX1EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_C9vf8JX1EDWlCeBeZPmo4A00" key="uuid" value="_C9vf8JX1EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_C9vf8JX1EDWlCeBeZPmo4A1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_C9vf8JX1EDWlCeBeZPmo4A2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_C9wHAJX1EDWlCeBeZPmo4A" name="register" type="_fGvncJX0EDWlCeBeZPmo4A" owningAssociation="_C9wuEJX1EDWlCeBeZPmo4A" association="_C9wuEJX1EDWlCeBeZPmo4A"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_C9wHAJX1EDWlCeBeZPmo4A0" source="genmymodel"> 
+      <details xmi:id="_C9wHAJX1EDWlCeBeZPmo4A00" key="uuid" value="_C9wHAJX1EDWlCeBeZPmo4A"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_C9wHAJX1EDWlCeBeZPmo4A1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_C9wHAJX1EDWlCeBeZPmo4A2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+ </uml:Model> 
+</xmi:XMI>

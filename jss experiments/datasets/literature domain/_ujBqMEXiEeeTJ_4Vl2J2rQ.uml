@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"> 
+ <uml:Model xmi:id="_ujBqMEXiEeeTJ_4Vl2J2rQ" name="model"> 
+  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+   <eAnnotations xmi:id="_ujBqMEXiEeeTJ_4Vl2J2rQ0" source="genmymodel"> 
+    <details xmi:id="_ujBqMEXiEeeTJ_4Vl2J2rQ00" key="uuid" value="_ujBqMEXiEeeTJ_4Vl2J2rQ"></details> 
+    <details xmi:id="_ujBqMEXiEeeTJ_4Vl2J2rQ01" key="author" value="maxim.lisovsky"></details> 
+   </eAnnotations> 
+  </xmi:Extension> 
+  <packageImport xmi:id="_ujBqMUXiEeeTJ_4Vl2J2rQ" importingNamespace="_ujBqMEXiEeeTJ_4Vl2J2rQ"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_ujBqMUXiEeeTJ_4Vl2J2rQ0" source="genmymodel"> 
+     <details xmi:id="_ujBqMUXiEeeTJ_4Vl2J2rQ00" key="uuid" value="_ujBqMUXiEeeTJ_4Vl2J2rQ"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#/" /> 
+  </packageImport> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_r0aRECgQEDWKkPBwAhH2rw" name="Booking.Item"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_r0aRECgQEDWKkPBwAhH2rw0" source="genmymodel"> 
+     <details xmi:id="_r0aRECgQEDWKkPBwAhH2rw00" key="uuid" value="_r0aRECgQEDWKkPBwAhH2rw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_wMJGUCgQEDWKkPBwAhH2rw" name="Booking.Constituent"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_wMJGUCgQEDWKkPBwAhH2rw0" source="genmymodel"> 
+     <details xmi:id="_wMJGUCgQEDWKkPBwAhH2rw00" key="uuid" value="_wMJGUCgQEDWKkPBwAhH2rw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Class" xmi:id="_xQWVUCgQEDWKkPBwAhH2rw" name="Booking.Booking"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_xQWVUCgQEDWKkPBwAhH2rw0" source="genmymodel"> 
+     <details xmi:id="_xQWVUCgQEDWKkPBwAhH2rw00" key="uuid" value="_xQWVUCgQEDWKkPBwAhH2rw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_2DnakCgREDWKkPBwAhH2rw" name="Booking.Item_Booking.Constituent" memberEnd="_2DmzgCgREDWKkPBwAhH2rw _2DmzgSgREDWKkPBwAhH2rw" navigableOwnedEnd="_2DmzgCgREDWKkPBwAhH2rw _2DmzgSgREDWKkPBwAhH2rw"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_2DnakCgREDWKkPBwAhH2rw0" source="genmymodel"> 
+     <details xmi:id="_2DnakCgREDWKkPBwAhH2rw00" key="uuid" value="_2DnakCgREDWKkPBwAhH2rw"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_2DmzgCgREDWKkPBwAhH2rw" name="booking.Constituent" type="_wMJGUCgQEDWKkPBwAhH2rw" aggregation="composite" owningAssociation="_2DnakCgREDWKkPBwAhH2rw" association="_2DnakCgREDWKkPBwAhH2rw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_2DmzgCgREDWKkPBwAhH2rw0" source="genmymodel"> 
+      <details xmi:id="_2DmzgCgREDWKkPBwAhH2rw00" key="uuid" value="_2DmzgCgREDWKkPBwAhH2rw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_2DmzgCgREDWKkPBwAhH2rw1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_2DmzgCgREDWKkPBwAhH2rw2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_2DmzgSgREDWKkPBwAhH2rw" name="booking.Item" type="_r0aRECgQEDWKkPBwAhH2rw" owningAssociation="_2DnakCgREDWKkPBwAhH2rw" association="_2DnakCgREDWKkPBwAhH2rw"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_2DmzgSgREDWKkPBwAhH2rw0" source="genmymodel"> 
+      <details xmi:id="_2DmzgSgREDWKkPBwAhH2rw00" key="uuid" value="_2DmzgSgREDWKkPBwAhH2rw"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_2DmzgSgREDWKkPBwAhH2rw1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_2DmzgSgREDWKkPBwAhH2rw2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+ </uml:Model> 
+</xmi:XMI>

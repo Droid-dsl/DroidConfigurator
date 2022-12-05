@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML"> 
+ <uml:Model xmi:id="_7QQqADoqEeewJqDqgRk6VA" name="model"> 
+  <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+   <eAnnotations xmi:id="_7QQqADoqEeewJqDqgRk6VA0" source="genmymodel"> 
+    <details xmi:id="_7QQqADoqEeewJqDqgRk6VA00" key="uuid" value="_7QQqADoqEeewJqDqgRk6VA"></details> 
+    <details xmi:id="_7QQqADoqEeewJqDqgRk6VA01" key="author" value="Shyam1992"></details> 
+   </eAnnotations> 
+  </xmi:Extension> 
+  <packageImport xmi:id="_7QQqAToqEeewJqDqgRk6VA" importingNamespace="_7QQqADoqEeewJqDqgRk6VA"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_7QQqAToqEeewJqDqgRk6VA0" source="genmymodel"> 
+     <details xmi:id="_7QQqAToqEeewJqDqgRk6VA00" key="uuid" value="_7QQqAToqEeewJqDqgRk6VA"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <importedPackage href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#/" /> 
+  </packageImport> 
+  <packagedElement xsi:type="uml:Actor" xmi:id="_z-DUcBxZEDWlFfZjoH3feg" name="Merchant Credit Card Processing System"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_z-DUcBxZEDWlFfZjoH3feg0" source="genmymodel"> 
+     <details xmi:id="_z-DUcBxZEDWlFfZjoH3feg00" key="uuid" value="_z-DUcBxZEDWlFfZjoH3feg"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Component" xmi:id="_7RXxEBxZEDWlFfZjoH3feg" name="<<subsystem>> Credit Card Payment Gateway"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_7RXxEBxZEDWlFfZjoH3feg0" source="genmymodel"> 
+     <details xmi:id="_7RXxEBxZEDWlFfZjoH3feg00" key="uuid" value="_7RXxEBxZEDWlFfZjoH3feg"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedUseCase xmi:id="__aoFcBxZEDWlFfZjoH3feg" name="Authorize and Capture"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="__aoFcBxZEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="__aoFcBxZEDWlFfZjoH3feg00" key="uuid" value="__aoFcBxZEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <include xmi:id="_avngoBxaEDWlFfZjoH3feg" addition="_CmjO4BxaEDWlFfZjoH3feg" includingCase="__aoFcBxZEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_avngoBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_avngoBxaEDWlFfZjoH3feg00" key="uuid" value="_avngoBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </include> 
+    <include xmi:id="_cdleUBxaEDWlFfZjoH3feg" addition="_FmFiIBxaEDWlFfZjoH3feg" includingCase="__aoFcBxZEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_cdleUBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_cdleUBxaEDWlFfZjoH3feg00" key="uuid" value="_cdleUBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </include> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_CmjO4BxaEDWlFfZjoH3feg" name="Authorize"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_CmjO4BxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_CmjO4BxaEDWlFfZjoH3feg00" key="uuid" value="_CmjO4BxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_FmFiIBxaEDWlFfZjoH3feg" name="Capture"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_FmFiIBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_FmFiIBxaEDWlFfZjoH3feg00" key="uuid" value="_FmFiIBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_HuAQ4BxaEDWlFfZjoH3feg" name="Credit"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_HuAQ4BxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_HuAQ4BxaEDWlFfZjoH3feg00" key="uuid" value="_HuAQ4BxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_Og8kUBxaEDWlFfZjoH3feg" name="Void"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_Og8kUBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_Og8kUBxaEDWlFfZjoH3feg00" key="uuid" value="_Og8kUBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+   <ownedUseCase xmi:id="_RyXRwBxaEDWlFfZjoH3feg" name="Verify"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_RyXRwBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_RyXRwBxaEDWlFfZjoH3feg00" key="uuid" value="_RyXRwBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </ownedUseCase> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_Vvrb4hxaEDWlFfZjoH3feg" name="Merchant Credit Card Processing System_Authorize and Capture" memberEnd="_Vvrb4BxaEDWlFfZjoH3feg _Vvrb4RxaEDWlFfZjoH3feg" navigableOwnedEnd="_Vvrb4BxaEDWlFfZjoH3feg _Vvrb4RxaEDWlFfZjoH3feg"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_Vvrb4hxaEDWlFfZjoH3feg0" source="genmymodel"> 
+     <details xmi:id="_Vvrb4hxaEDWlFfZjoH3feg00" key="uuid" value="_Vvrb4hxaEDWlFfZjoH3feg"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_Vvrb4BxaEDWlFfZjoH3feg" name="authorize and Capture" type="__aoFcBxZEDWlFfZjoH3feg" owningAssociation="_Vvrb4hxaEDWlFfZjoH3feg" association="_Vvrb4hxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_Vvrb4BxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_Vvrb4BxaEDWlFfZjoH3feg00" key="uuid" value="_Vvrb4BxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Vvrb4BxaEDWlFfZjoH3feg1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vvrb4BxaEDWlFfZjoH3feg2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_Vvrb4RxaEDWlFfZjoH3feg" name="merchant Credit Card Processing System" type="_z-DUcBxZEDWlFfZjoH3feg" owningAssociation="_Vvrb4hxaEDWlFfZjoH3feg" association="_Vvrb4hxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_Vvrb4RxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_Vvrb4RxaEDWlFfZjoH3feg00" key="uuid" value="_Vvrb4RxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Vvrb4RxaEDWlFfZjoH3feg1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vvrb4RxaEDWlFfZjoH3feg2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_Wke88BxaEDWlFfZjoH3feg" name="Merchant Credit Card Processing System_Authorize" memberEnd="_WkeV4BxaEDWlFfZjoH3feg _WkeV4RxaEDWlFfZjoH3feg" navigableOwnedEnd="_WkeV4BxaEDWlFfZjoH3feg _WkeV4RxaEDWlFfZjoH3feg"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_Wke88BxaEDWlFfZjoH3feg0" source="genmymodel"> 
+     <details xmi:id="_Wke88BxaEDWlFfZjoH3feg00" key="uuid" value="_Wke88BxaEDWlFfZjoH3feg"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_WkeV4BxaEDWlFfZjoH3feg" name="authorize" type="_CmjO4BxaEDWlFfZjoH3feg" owningAssociation="_Wke88BxaEDWlFfZjoH3feg" association="_Wke88BxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_WkeV4BxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_WkeV4BxaEDWlFfZjoH3feg00" key="uuid" value="_WkeV4BxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_WkeV4BxaEDWlFfZjoH3feg1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_WkeV4BxaEDWlFfZjoH3feg2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_WkeV4RxaEDWlFfZjoH3feg" name="merchant Credit Card Processing System" type="_z-DUcBxZEDWlFfZjoH3feg" owningAssociation="_Wke88BxaEDWlFfZjoH3feg" association="_Wke88BxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_WkeV4RxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_WkeV4RxaEDWlFfZjoH3feg00" key="uuid" value="_WkeV4RxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_WkeV4RxaEDWlFfZjoH3feg1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_WkeV4RxaEDWlFfZjoH3feg2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_XER3URxaEDWlFfZjoH3feg" name="Merchant Credit Card Processing System_Capture" memberEnd="_XERQQBxaEDWlFfZjoH3feg _XER3UBxaEDWlFfZjoH3feg" navigableOwnedEnd="_XERQQBxaEDWlFfZjoH3feg _XER3UBxaEDWlFfZjoH3feg"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_XER3URxaEDWlFfZjoH3feg0" source="genmymodel"> 
+     <details xmi:id="_XER3URxaEDWlFfZjoH3feg00" key="uuid" value="_XER3URxaEDWlFfZjoH3feg"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_XERQQBxaEDWlFfZjoH3feg" name="capture" type="_FmFiIBxaEDWlFfZjoH3feg" owningAssociation="_XER3URxaEDWlFfZjoH3feg" association="_XER3URxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_XERQQBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_XERQQBxaEDWlFfZjoH3feg00" key="uuid" value="_XERQQBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_XERQQBxaEDWlFfZjoH3feg1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_XERQQBxaEDWlFfZjoH3feg2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_XER3UBxaEDWlFfZjoH3feg" name="merchant Credit Card Processing System" type="_z-DUcBxZEDWlFfZjoH3feg" owningAssociation="_XER3URxaEDWlFfZjoH3feg" association="_XER3URxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_XER3UBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_XER3UBxaEDWlFfZjoH3feg00" key="uuid" value="_XER3UBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_XER3UBxaEDWlFfZjoH3feg1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_XER3UBxaEDWlFfZjoH3feg2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_XyTa8hxaEDWlFfZjoH3feg" name="Merchant Credit Card Processing System_Credit" memberEnd="_XyTa8BxaEDWlFfZjoH3feg _XyTa8RxaEDWlFfZjoH3feg" navigableOwnedEnd="_XyTa8BxaEDWlFfZjoH3feg _XyTa8RxaEDWlFfZjoH3feg"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_XyTa8hxaEDWlFfZjoH3feg0" source="genmymodel"> 
+     <details xmi:id="_XyTa8hxaEDWlFfZjoH3feg00" key="uuid" value="_XyTa8hxaEDWlFfZjoH3feg"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_XyTa8BxaEDWlFfZjoH3feg" name="credit" type="_HuAQ4BxaEDWlFfZjoH3feg" owningAssociation="_XyTa8hxaEDWlFfZjoH3feg" association="_XyTa8hxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_XyTa8BxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_XyTa8BxaEDWlFfZjoH3feg00" key="uuid" value="_XyTa8BxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_XyTa8BxaEDWlFfZjoH3feg1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_XyTa8BxaEDWlFfZjoH3feg2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_XyTa8RxaEDWlFfZjoH3feg" name="merchant Credit Card Processing System" type="_z-DUcBxZEDWlFfZjoH3feg" owningAssociation="_XyTa8hxaEDWlFfZjoH3feg" association="_XyTa8hxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_XyTa8RxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_XyTa8RxaEDWlFfZjoH3feg00" key="uuid" value="_XyTa8RxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_XyTa8RxaEDWlFfZjoH3feg1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_XyTa8RxaEDWlFfZjoH3feg2" value="1" /> 
+   </ownedEnd> 
+  </packagedElement> 
+  <packagedElement xsi:type="uml:Association" xmi:id="_ZHr5gBxaEDWlFfZjoH3feg" name="Merchant Credit Card Processing System_Void" memberEnd="_ZHqEUBxaEDWlFfZjoH3feg _ZHqEURxaEDWlFfZjoH3feg" navigableOwnedEnd="_ZHqEUBxaEDWlFfZjoH3feg _ZHqEURxaEDWlFfZjoH3feg"> 
+   <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+    <eAnnotations xmi:id="_ZHr5gBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+     <details xmi:id="_ZHr5gBxaEDWlFfZjoH3feg00" key="uuid" value="_ZHr5gBxaEDWlFfZjoH3feg"></details> 
+    </eAnnotations> 
+   </xmi:Extension> 
+   <ownedEnd xmi:id="_ZHqEUBxaEDWlFfZjoH3feg" name="void" type="_Og8kUBxaEDWlFfZjoH3feg" owningAssociation="_ZHr5gBxaEDWlFfZjoH3feg" association="_ZHr5gBxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_ZHqEUBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_ZHqEUBxaEDWlFfZjoH3feg00" key="uuid" value="_ZHqEUBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_ZHqEUBxaEDWlFfZjoH3feg1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZHqEUBxaEDWlFfZjoH3feg2" value="1" /> 
+   </ownedEnd> 
+   <ownedEnd xmi:id="_ZHqEURxaEDWlFfZjoH3feg" name="merchant Credit Card Processing System" type="_z-DUcBxZEDWlFfZjoH3feg" owningAssociation="_ZHr5gBxaEDWlFfZjoH3feg" association="_ZHr5gBxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_ZHqEURxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_ZHqEURxaEDWlFfZjoH3feg00" key="uuid" value="_ZHqEURxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_ZHqEURxaEDWlFfZjoH3feg1" /> 
+    <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZHqEURxaEDWlFfZjoH3feg2" value="1" /> 
+   </ownedEnd> &lt;/packagedElement&gt; 
+   <packagedElement xsi:type="uml:Association" xmi:id="_Zv5wEhxaEDWlFfZjoH3feg" name="Merchant Credit Card Processing System_Verify" memberEnd="_Zv5wEBxaEDWlFfZjoH3feg _Zv5wERxaEDWlFfZjoH3feg" navigableOwnedEnd="_Zv5wEBxaEDWlFfZjoH3feg _Zv5wERxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_Zv5wEhxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_Zv5wEhxaEDWlFfZjoH3feg00" key="uuid" value="_Zv5wEhxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_Zv5wEBxaEDWlFfZjoH3feg" name="verify" type="_RyXRwBxaEDWlFfZjoH3feg" owningAssociation="_Zv5wEhxaEDWlFfZjoH3feg" association="_Zv5wEhxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_Zv5wEBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_Zv5wEBxaEDWlFfZjoH3feg00" key="uuid" value="_Zv5wEBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Zv5wEBxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zv5wEBxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_Zv5wERxaEDWlFfZjoH3feg" name="merchant Credit Card Processing System" type="_z-DUcBxZEDWlFfZjoH3feg" owningAssociation="_Zv5wEhxaEDWlFfZjoH3feg" association="_Zv5wEhxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_Zv5wERxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_Zv5wERxaEDWlFfZjoH3feg00" key="uuid" value="_Zv5wERxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_Zv5wERxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zv5wERxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Actor" xmi:id="_jbCYoBxaEDWlFfZjoH3feg" name="Customer Credit Card Bank"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_jbCYoBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_jbCYoBxaEDWlFfZjoH3feg00" key="uuid" value="_jbCYoBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Actor" xmi:id="_mncDMBxaEDWlFfZjoH3feg" name="Merchant's Bank"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_mncDMBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_mncDMBxaEDWlFfZjoH3feg00" key="uuid" value="_mncDMBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Association" xmi:id="_vNer8RxaEDWlFfZjoH3feg" name="Merchant's Bank_Capture" memberEnd="_vNdd0BxaEDWlFfZjoH3feg _vNer8BxaEDWlFfZjoH3feg" navigableOwnedEnd="_vNdd0BxaEDWlFfZjoH3feg _vNer8BxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_vNer8RxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_vNer8RxaEDWlFfZjoH3feg00" key="uuid" value="_vNer8RxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_vNdd0BxaEDWlFfZjoH3feg" name="capture" type="_FmFiIBxaEDWlFfZjoH3feg" owningAssociation="_vNer8RxaEDWlFfZjoH3feg" association="_vNer8RxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_vNdd0BxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_vNdd0BxaEDWlFfZjoH3feg00" key="uuid" value="_vNdd0BxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_vNdd0BxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNdd0BxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_vNer8BxaEDWlFfZjoH3feg" name="merchant's Bank" type="_mncDMBxaEDWlFfZjoH3feg" owningAssociation="_vNer8RxaEDWlFfZjoH3feg" association="_vNer8RxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_vNer8BxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_vNer8BxaEDWlFfZjoH3feg00" key="uuid" value="_vNer8BxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_vNer8BxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_vNer8BxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Association" xmi:id="_wHkVoRxaEDWlFfZjoH3feg" name="Merchant's Bank_Credit" memberEnd="_wHjukBxaEDWlFfZjoH3feg _wHkVoBxaEDWlFfZjoH3feg" navigableOwnedEnd="_wHjukBxaEDWlFfZjoH3feg _wHkVoBxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_wHkVoRxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_wHkVoRxaEDWlFfZjoH3feg00" key="uuid" value="_wHkVoRxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_wHjukBxaEDWlFfZjoH3feg" name="credit" type="_HuAQ4BxaEDWlFfZjoH3feg" owningAssociation="_wHkVoRxaEDWlFfZjoH3feg" association="_wHkVoRxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_wHjukBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_wHjukBxaEDWlFfZjoH3feg00" key="uuid" value="_wHjukBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_wHjukBxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHjukBxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_wHkVoBxaEDWlFfZjoH3feg" name="merchant's Bank" type="_mncDMBxaEDWlFfZjoH3feg" owningAssociation="_wHkVoRxaEDWlFfZjoH3feg" association="_wHkVoRxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_wHkVoBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_wHkVoBxaEDWlFfZjoH3feg00" key="uuid" value="_wHkVoBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_wHkVoBxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHkVoBxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Association" xmi:id="_wv-ZcBxaEDWlFfZjoH3feg" name="Merchant's Bank_Void" memberEnd="_wv9LUBxaEDWlFfZjoH3feg _wv9LURxaEDWlFfZjoH3feg" navigableOwnedEnd="_wv9LUBxaEDWlFfZjoH3feg _wv9LURxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_wv-ZcBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_wv-ZcBxaEDWlFfZjoH3feg00" key="uuid" value="_wv-ZcBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_wv9LUBxaEDWlFfZjoH3feg" name="void" type="_Og8kUBxaEDWlFfZjoH3feg" owningAssociation="_wv-ZcBxaEDWlFfZjoH3feg" association="_wv-ZcBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_wv9LUBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_wv9LUBxaEDWlFfZjoH3feg00" key="uuid" value="_wv9LUBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_wv9LUBxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv9LUBxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_wv9LURxaEDWlFfZjoH3feg" name="merchant's Bank" type="_mncDMBxaEDWlFfZjoH3feg" owningAssociation="_wv-ZcBxaEDWlFfZjoH3feg" association="_wv-ZcBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_wv9LURxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_wv9LURxaEDWlFfZjoH3feg00" key="uuid" value="_wv9LURxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_wv9LURxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv9LURxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Association" xmi:id="_yKWFsBxaEDWlFfZjoH3feg" name="Customer Credit Card Bank_Authorize" memberEnd="_yKVeoBxaEDWlFfZjoH3feg _yKVeoRxaEDWlFfZjoH3feg" navigableOwnedEnd="_yKVeoBxaEDWlFfZjoH3feg _yKVeoRxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_yKWFsBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_yKWFsBxaEDWlFfZjoH3feg00" key="uuid" value="_yKWFsBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_yKVeoBxaEDWlFfZjoH3feg" name="authorize" type="_CmjO4BxaEDWlFfZjoH3feg" owningAssociation="_yKWFsBxaEDWlFfZjoH3feg" association="_yKWFsBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_yKVeoBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_yKVeoBxaEDWlFfZjoH3feg00" key="uuid" value="_yKVeoBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_yKVeoBxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKVeoBxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_yKVeoRxaEDWlFfZjoH3feg" name="customer Credit Card Bank" type="_jbCYoBxaEDWlFfZjoH3feg" owningAssociation="_yKWFsBxaEDWlFfZjoH3feg" association="_yKWFsBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_yKVeoRxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_yKVeoRxaEDWlFfZjoH3feg00" key="uuid" value="_yKVeoRxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_yKVeoRxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKVeoRxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Association" xmi:id="_y-NyoBxaEDWlFfZjoH3feg" name="Customer Credit Card Bank_Capture" memberEnd="_y-MkgBxaEDWlFfZjoH3feg _y-MkgRxaEDWlFfZjoH3feg" navigableOwnedEnd="_y-MkgBxaEDWlFfZjoH3feg _y-MkgRxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_y-NyoBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_y-NyoBxaEDWlFfZjoH3feg00" key="uuid" value="_y-NyoBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_y-MkgBxaEDWlFfZjoH3feg" name="capture" type="_FmFiIBxaEDWlFfZjoH3feg" owningAssociation="_y-NyoBxaEDWlFfZjoH3feg" association="_y-NyoBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_y-MkgBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_y-MkgBxaEDWlFfZjoH3feg00" key="uuid" value="_y-MkgBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_y-MkgBxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_y-MkgBxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_y-MkgRxaEDWlFfZjoH3feg" name="customer Credit Card Bank" type="_jbCYoBxaEDWlFfZjoH3feg" owningAssociation="_y-NyoBxaEDWlFfZjoH3feg" association="_y-NyoBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_y-MkgRxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_y-MkgRxaEDWlFfZjoH3feg00" key="uuid" value="_y-MkgRxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_y-MkgRxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_y-MkgRxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Association" xmi:id="_zza8UBxaEDWlFfZjoH3feg" name="Customer Credit Card Bank_Credit" memberEnd="_zzYgEBxaEDWlFfZjoH3feg _zzYgERxaEDWlFfZjoH3feg" navigableOwnedEnd="_zzYgEBxaEDWlFfZjoH3feg _zzYgERxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_zza8UBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_zza8UBxaEDWlFfZjoH3feg00" key="uuid" value="_zza8UBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_zzYgEBxaEDWlFfZjoH3feg" name="credit" type="_HuAQ4BxaEDWlFfZjoH3feg" owningAssociation="_zza8UBxaEDWlFfZjoH3feg" association="_zza8UBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_zzYgEBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_zzYgEBxaEDWlFfZjoH3feg00" key="uuid" value="_zzYgEBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_zzYgEBxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_zzYgEBxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_zzYgERxaEDWlFfZjoH3feg" name="customer Credit Card Bank" type="_jbCYoBxaEDWlFfZjoH3feg" owningAssociation="_zza8UBxaEDWlFfZjoH3feg" association="_zza8UBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_zzYgERxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_zzYgERxaEDWlFfZjoH3feg00" key="uuid" value="_zzYgERxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_zzYgERxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_zzYgERxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Association" xmi:id="_0-iEkBxaEDWlFfZjoH3feg" name="Customer Credit Card Bank_Void" memberEnd="_0-hdgBxaEDWlFfZjoH3feg _0-hdgRxaEDWlFfZjoH3feg" navigableOwnedEnd="_0-hdgBxaEDWlFfZjoH3feg _0-hdgRxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_0-iEkBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_0-iEkBxaEDWlFfZjoH3feg00" key="uuid" value="_0-iEkBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_0-hdgBxaEDWlFfZjoH3feg" name="void" type="_Og8kUBxaEDWlFfZjoH3feg" owningAssociation="_0-iEkBxaEDWlFfZjoH3feg" association="_0-iEkBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_0-hdgBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_0-hdgBxaEDWlFfZjoH3feg00" key="uuid" value="_0-hdgBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_0-hdgBxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_0-hdgBxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_0-hdgRxaEDWlFfZjoH3feg" name="customer Credit Card Bank" type="_jbCYoBxaEDWlFfZjoH3feg" owningAssociation="_0-iEkBxaEDWlFfZjoH3feg" association="_0-iEkBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_0-hdgRxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_0-hdgRxaEDWlFfZjoH3feg00" key="uuid" value="_0-hdgRxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_0-hdgRxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_0-hdgRxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Association" xmi:id="_1dYjwBxaEDWlFfZjoH3feg" name="Customer Credit Card Bank_Verify" memberEnd="_1dX8sBxaEDWlFfZjoH3feg _1dX8sRxaEDWlFfZjoH3feg" navigableOwnedEnd="_1dX8sBxaEDWlFfZjoH3feg _1dX8sRxaEDWlFfZjoH3feg"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_1dYjwBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_1dYjwBxaEDWlFfZjoH3feg00" key="uuid" value="_1dYjwBxaEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedEnd xmi:id="_1dX8sBxaEDWlFfZjoH3feg" name="verify" type="_RyXRwBxaEDWlFfZjoH3feg" owningAssociation="_1dYjwBxaEDWlFfZjoH3feg" association="_1dYjwBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_1dX8sBxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_1dX8sBxaEDWlFfZjoH3feg00" key="uuid" value="_1dX8sBxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_1dX8sBxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_1dX8sBxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+    <ownedEnd xmi:id="_1dX8sRxaEDWlFfZjoH3feg" name="customer Credit Card Bank" type="_jbCYoBxaEDWlFfZjoH3feg" owningAssociation="_1dYjwBxaEDWlFfZjoH3feg" association="_1dYjwBxaEDWlFfZjoH3feg"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_1dX8sRxaEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_1dX8sRxaEDWlFfZjoH3feg00" key="uuid" value="_1dX8sRxaEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+     <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_1dX8sRxaEDWlFfZjoH3feg1" /> 
+     <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_1dX8sRxaEDWlFfZjoH3feg2" value="1" /> 
+    </ownedEnd> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Actor" xmi:id="_Gd10EBxbEDWlFfZjoH3feg" name="Foreman"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_Gd10EBxbEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_Gd10EBxbEDWlFfZjoH3feg00" key="uuid" value="_Gd10EBxbEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Actor" xmi:id="_RdL2gBxbEDWlFfZjoH3feg" name="Warehouse worker"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_RdL2gBxbEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_RdL2gBxbEDWlFfZjoH3feg00" key="uuid" value="_RdL2gBxbEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+   </packagedElement> 
+   <packagedElement xsi:type="uml:Component" xmi:id="_VB1pABxbEDWlFfZjoH3feg" name="Inventory System"> 
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+     <eAnnotations xmi:id="_VB1pABxbEDWlFfZjoH3feg0" source="genmymodel"> 
+      <details xmi:id="_VB1pABxbEDWlFfZjoH3feg00" key="uuid" value="_VB1pABxbEDWlFfZjoH3feg"></details> 
+     </eAnnotations> 
+    </xmi:Extension> 
+    <ownedUseCase xmi:id="_ZPiYgBxbEDWlFfZjoH3feg" name="view availability"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_ZPiYgBxbEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_ZPiYgBxbEDWlFfZjoH3feg00" key="uuid" value="_ZPiYgBxbEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </ownedUseCase> 
+    <ownedUseCase xmi:id="_a__pgBxbEDWlFfZjoH3feg" name="Order Products"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_a__pgBxbEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_a__pgBxbEDWlFfZjoH3feg00" key="uuid" value="_a__pgBxbEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </ownedUseCase> 
+    <ownedUseCase xmi:id="_cUqWYBxbEDWlFfZjoH3feg" name="Delivery Control"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_cUqWYBxbEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_cUqWYBxbEDWlFfZjoH3feg00" key="uuid" value="_cUqWYBxbEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </ownedUseCase> 
+    <ownedUseCase xmi:id="_fbY2wBxbEDWlFfZjoH3feg" name="Update product quality information"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_fbY2wBxbEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_fbY2wBxbEDWlFfZjoH3feg00" key="uuid" value="_fbY2wBxbEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </ownedUseCase> 
+    <ownedUseCase xmi:id="_oSEjkBxbEDWlFfZjoH3feg" name="Make an Invoice"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_oSEjkBxbEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_oSEjkBxbEDWlFfZjoH3feg00" key="uuid" value="_oSEjkBxbEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </ownedUseCase> 
+    <ownedUseCase xmi:id="_qGCbkBxbEDWlFfZjoH3feg" name="View location information"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_qGCbkBxbEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_qGCbkBxbEDWlFfZjoH3feg00" key="uuid" value="_qGCbkBxbEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </ownedUseCase> 
+    <ownedUseCase xmi:id="_siblgBxbEDWlFfZjoH3feg" name="Change product location"> 
+     <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore"> 
+      <eAnnotations xmi:id="_siblgBxbEDWlFfZjoH3feg0" source="genmymodel"> 
+       <details xmi:id="_siblgBxbEDWlFfZjoH3feg00" key="uuid" value="_siblgBxbEDWlFfZjoH3feg"></details> 
+      </eAnnotations> 
+     </xmi:Extension> 
+    </ownedUseCase> 
+   </packagedElement> 
+  </packagedElement>
+ </uml:Model> 
+</xmi:XMI>
