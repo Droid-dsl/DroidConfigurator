@@ -17,7 +17,7 @@ Currently, Droid offers automated, out-of-the-box integration with the tree edit
 ## Data
 
 <p align="left">
-The data used for our evaluations is located within the 'data' folder, which is named according to the training date. Inside, you'll find a 'dataset' folder containing the models or metamodels used for training, as well as a 'results' folder with the corresponding result data.
+The data used for our evaluations is located within the 'Data' folder, which is named according to the training date. Inside, you'll find a 'dataset' folder containing the models or metamodels used for training, as well as a 'results' folder with the corresponding result data.
   
   - 202205: Contains the evaluation data presented in our paper titled 'Building Recommender Systems for Modeling Languages with Droid'. 
   - 202303: Contains the evaluation data for a journal publication currently under review by the Empirical Software Engineering journal.
